@@ -1,0 +1,47 @@
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+
+# MCNP restart and large generated files
+runtp*
+meshtal*
+mctal*
+*.r
+*.s
+*.bak
+*.tmp
+
+# Licensed software, nuclear data and installation files
+*.exe
+*.dll
+*.ace
+*.lic
+license*
+xsdir
+MCNP---DATE/
+Installation/
+
+# Raw or bulk outputs are excluded by default. Curated samples live in reference/.
+results/raw/
+**/output/
+*.out
+*.outp
+outp
+!reference/**/outp
+
+# Formal outputs remain local because unmodified MCNP files include the
+# supercomputer XSDIR/account path. Their hashes and locations are inventoried.
+
+# Generated analysis artifacts
+*_roi_scan.csv
+*_roi_fit.png
+*_roi_summary.txt
+
+# Credentials and local environment files
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
