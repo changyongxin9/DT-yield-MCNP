@@ -1,0 +1,10 @@
+Case: Disk_D10
+NPS: 500000000
+Target Energy: 6.13 MeV
+F8 @ 6.13 MeV: 1.38400000E-06
+RE @ 6.13 MeV: 0.038
+ROI Range: 6.09-6.17 MeV
+ROI Sum: 1.10340000E-05
+ROI Max Energy: 6.12 MeV
+ROI Max F8: 1.41600000E-06
+ROI Max RE: 0.0376

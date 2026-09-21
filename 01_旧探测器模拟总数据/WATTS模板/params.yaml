@@ -1,0 +1,64 @@
+template: template.i
+parameter_csv: ../parameter.csv
+
+cases:
+  - case: T01_H25_D01
+    category: 厚度优化
+    Rin: 5
+    Rout: 6
+    H: 25
+    d: 1
+  - case: T02_H25_D01
+    category: 厚度优化
+    Rin: 5
+    Rout: 7
+    H: 25
+    d: 1
+  - case: T03_H25_D01
+    category: 厚度优化
+    Rin: 5
+    Rout: 8
+    H: 25
+    d: 1
+  - case: T04_H25_D01
+    category: 厚度优化
+    Rin: 5
+    Rout: 9
+    H: 25
+    d: 1
+  - case: T05_H25_D01
+    category: 厚度优化
+    Rin: 5
+    Rout: 10
+    H: 25
+    d: 1
+  - case: T06_H25_D01
+    category: 厚度优化
+    Rin: 5
+    Rout: 11
+    H: 25
+    d: 1
+  - case: T07_H25_D01
+    category: 厚度优化
+    Rin: 5
+    Rout: 12
+    H: 25
+    d: 1
+  - case: T08_H25_D01
+    category: 厚度优化
+    Rin: 5
+    Rout: 13
+    H: 25
+    d: 1
+  - case: T09_H25_D01
+    category: 厚度优化
+    Rin: 5
+    Rout: 14
+    H: 25
+    d: 1
+  - case: T10_H25_D01
+    category: 厚度优化
+    Rin: 5
+    Rout: 15
+    H: 25
+    d: 1

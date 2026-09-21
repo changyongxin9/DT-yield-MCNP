@@ -1,0 +1,2116 @@
+          Code Name & Version = MCNP, 6.1.1b
+  
+     _/      _/        _/_/_/       _/      _/       _/_/_/         _/_/_/
+    _/_/  _/_/      _/             _/_/    _/       _/    _/     _/       
+   _/  _/  _/      _/             _/  _/  _/       _/_/_/       _/_/_/    
+  _/      _/      _/             _/    _/_/       _/           _/    _/   
+ _/      _/        _/_/_/       _/      _/       _/             _/_/      
+  
+  +---------------------------------------------------------------------+
+  | Copyright 2008. Los Alamos National Security, LLC.  All rights      |
+  | reserved.                                                           |
+  |   This material was produced under U.S. Government contract         |
+  | DE-AC52-06NA25396 for Los Alamos National Laboratory, which is      |
+  | operated by Los Alamos National Security, LLC, for the U.S.         |
+  | Department of Energy. The Government is granted for itself and      |
+  | others acting on its behalf a paid-up, nonexclusive, irrevocable    |
+  | worldwide license in this material to reproduce, prepare derivative |
+  | works, and perform publicly and display publicly. Beginning five    |
+  | (5) years after 2008, subject to additional five-year worldwide     |
+  | renewals, the Government is granted for itself and others acting on |
+  | its behalf a paid-up, nonexclusive, irrevocable worldwide license   |
+  | in this material to reproduce, prepare derivative works, distribute |
+  | copies to the public, perform publicly and display publicly, and to |
+  | permit others to do so. NEITHER THE UNITED STATES NOR THE UNITED    |
+  | STATES DEPARTMENT OF ENERGY, NOR LOS ALAMOS NATIONAL SECURITY, LLC, |
+  | NOR ANY OF THEIR EMPLOYEES, MAKES ANY WARRANTY, EXPRESS OR IMPLIED, |
+  | OR ASSUMES ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY,  |
+  | COMPLETENESS, OR USEFULNESS OF ANY INFORMATION, APPARATUS, PRODUCT, |
+  | OR PROCESS DISCLOSED, OR REPRESENTS THAT ITS USE WOULD NOT INFRINGE |
+  | PRIVATELY OWNED RIGHTS.                                             |
+  +---------------------------------------------------------------------+
+  
+1mcnp     version 6.mpi ld=04/12/25                     09/17/26 14:18:56 
+ *************************************************************************                 probid =  09/17/26 14:18:56 
+ i=T04_H20_D01.i                                                                 
+
+ 
+  warning.  Physics models disabled.
+         1-       CaO Phi10 mm disk source, MCNP6 WATTS template                                  
+         2-       1 2 -5.29 -4 imp:n=1 imp:p=1                                                    
+         3-       2 3 -2.70 -5 4 imp:n=1 imp:p=1                                                  
+         4-       3 0 -1 imp:n=1 imp:p=1                                                          
+         5-       4 0 -2 1 imp:n=1 imp:p=1                                                        
+         6-       5 1 -1.80 -3 2 imp:n=1 imp:p=1                                                  
+         7-       6 0 -6 #1 #2 #3 #4 #5 imp:n=1 imp:p=1                                           
+         8-       7 0 6 imp:n=0 imp:p=0                                                           
+         9-                                                                                       
+        10-       1 RCC 0 0 -9.0 0 0 18.0 1.95                                                    
+        11-       2 RCC 0 0 -10.0 0 0 20.0 5.0                                                    
+        12-       3 RCC 0 0 -10.0 0 0 20.0 9.0                                                    
+        13-       4 RCC 10.0 0 0 5.08 0 0 2.54                                                    
+        14-       5 RCC 9.8 0 0 5.48 0 0 3.0                                                      
+        15-       6 SO 100.0                                                                      
+        16-                                                                                       
+        17-       MODE N P                                                                        
+  comment.  photonuclear physics may be needed (phys:p).
+        18-       M1 20000.60c -0.7143 8016.62c -0.2857                                           
+        19-       M2 57138.71c 0.000222025                                                        
+        20-            57139.71c 0.249777975                                                      
+        21-            35079.71c 0.380175                                                         
+        22-            35081.71c 0.369825                                                         
+        23-       M3 13027.60c 1.0                                                                
+        24-       SDEF POS=0 0 0 AXS=0 0 1 RAD=D1 PAR=1 ERG=14.1                                  
+        25-       SI1 0 0.5                                                                       
+        26-       SP1 -21 1                                                                       
+        27-       F8:P 1                                                                          
+ 
+  warning.  f8 tally unreliable since neutron transport nonanalog.
+        28-       E8 0 1599I 16                                                                   
+        29-       FT8 GEB 0.01723 0.02424 0                                                       
+        30-       RAND GEN=2                                                                      
+        31-       NPS 500000000                                                                   
+ 
+  comment.  total nubar used if fissionable isotopes are present.
+
+ surface        2.2 and surface        3.2 are the same.        3.2 will be deleted.
+
+ surface        2.3 and surface        3.3 are the same.        3.3 will be deleted.
+ 
+  comment.           2 surfaces were deleted for being the same as others.
+ 
+  warning.  Default xsdir_mcnp6.1 not found. Switching to backup, xsdir
+1cells                                                                                                  print table 60
+
+                               atom        gram                                            neutron    photon     photon wt             
+              cell      mat   density     density     volume       mass            pieces importance importance generation             
+
+        1        1        2  3.36558E-02 5.29000E+00 1.02963E+02 5.44674E+02           1  1.0000E+00 1.0000E+00 -1.000E+00             
+        2        2        3  6.02616E-02 2.70000E+00 5.19804E+01 1.40347E+02           1  1.0000E+00 1.0000E+00 -1.000E+00             
+        3        3        0  0.00000E+00 0.00000E+00 2.15026E+02 0.00000E+00           1  1.0000E+00 1.0000E+00 -1.000E+00             
+        4        4        0  0.00000E+00 0.00000E+00 1.35577E+03 0.00000E+00           1  1.0000E+00 1.0000E+00 -1.000E+00             
+        5        5        1  3.86810E-02 1.80000E+00 3.51858E+03 6.33345E+03           1  1.0000E+00 1.0000E+00 -1.000E+00             
+        6        6        0  0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00           0  1.0000E+00 1.0000E+00 -1.000E+00             
+        7        7        0  0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00           0  0.0000E+00 0.0000E+00 -1.000E+00             
+
+ total                                               5.24432E+03 7.01847E+03
+
+    minimum source weight = 1.0000E+00    maximum source weight = 1.0000E+00
+
+ ***************************************************
+ * Random Number Generator  =                    2 *
+ * Random Number Seed       =                    1 *
+ * Random Number Multiplier =  9219741426499971445 *
+ * Random Number Adder      =                    1 *
+ * Random Number Bits Used  =                   63 *
+ * Random Number Stride     =               152917 *
+ ***************************************************
+
+ 
+  comment.  unresolved resonances with variance reduction with f8 tally.
+ 
+  warning.  Force analog capture for pulse height tallies
+  warning.  Pulse-height tally variance reduction forced off. F8 tallies not reliable.
+
+         5 warning messages so far.
+1cross-section tables                                                                                   print table 100
+     XSDIR used: <REMOTE_HOME>/soft/mcnp6/MCNP_DATA//xsdir
+
+     table    length
+
+                        tables from file actia                                                           
+
+   8016.62c  263476  8-o-16 at 293.6K from endf-vi.8 njoy99.50                                    mat 825      12/05/01
+                     Energy range:   1.00000E-11  to  1.50000E+02 MeV.
+                     particle-production data for protons   being expunged from   8016.62c          
+                     particle-production data for deuterons being expunged from   8016.62c          
+                     particle-production data for tritons   being expunged from   8016.62c          
+                     particle-production data for alphas    being expunged from   8016.62c          
+
+                        tables from file endf60                                                          
+
+  13027.60c   51027  13-al-27 from endf/b-vi                                                      mat1325      11/25/93
+                     Energy range:   1.00000E-11  to  2.00000E+01 MeV.
+  20000.60c   70816  20-ca-nat from endf/b-vi                                                     mat2000      11/25/93
+                     Energy range:   1.00000E-11  to  2.00000E+01 MeV.
+
+                        tables from file Br_079_293.6K.ace                                               
+
+  35079.71c  229295  ENDF/B-VII.1: ACE File Gen @293.6K for n-035_Br_079 (R. Arcilla, NNDC)       mat3525      04/20/12
+                     Energy range:   1.00000E-11  to  2.00000E+01 MeV.
+                     probability tables used from 5.5000E-03 to 1.0000E-01 mev.
+ 
+  warning.   35079.71c lacks gamma-ray production cross sections.
+
+                        tables from file Br_081_293.6K.ace                                               
+
+  35081.71c  213014  ENDF/B-VII.1: ACE File Gen @293.6K for n-035_Br_081 (R. Arcilla, NNDC)       mat3531      04/20/12
+                     Energy range:   1.00000E-11  to  2.00000E+01 MeV.
+                     probability tables used from 1.6000E-02 to 1.0000E-01 mev.
+ 
+  warning.   35081.71c lacks gamma-ray production cross sections.
+
+                        tables from file La_138_293.6K.ace                                               
+
+  57138.71c   81837  ENDF/B-VII.1: ACE File Gen @293.6K for n-057_La_138 (R. Arcilla, NNDC)       mat5725      04/20/12
+                     Energy range:   1.00000E-11  to  2.00000E+01 MeV.
+                     probability tables used from 3.3000E-04 to 1.0000E-01 mev.
+ 
+  warning.   57138.71c lacks gamma-ray production cross sections.
+
+                        tables from file La_139_293.6K.ace                                               
+
+  57139.71c  166076  ENDF/B-VII.1: ACE File Gen @293.6K for n-057_La_139 (R. Arcilla, NNDC)       mat5728      04/20/12
+                     Energy range:   1.00000E-11  to  2.00000E+01 MeV.
+                     probability tables used from 2.0000E-02 to 1.0000E-01 mev.
+ 
+  warning.   57139.71c lacks gamma-ray production cross sections.
+
+                        tables from file mcplib04                                                        
+
+ 
+  comment.    8000.04p pips data for photon energy broadening converted to CDF form.
+   8000.04p    3348  ENDF/B-VI Release 8 Photoatomic Data for 8-O                                 mat 800      02/07/03
+                     Energy range:   1.00000E-03  to  1.00000E+05 MeV.
+ 
+  comment.   13000.04p pips data for photon energy broadening converted to CDF form.
+  13000.04p    4922  ENDF/B-VI Release 8 Photoatomic Data for 13-AL                               mat1300      02/07/03
+                     Energy range:   1.00000E-03  to  1.00000E+05 MeV.
+ 
+  comment.   20000.04p pips data for photon energy broadening converted to CDF form.
+  20000.04p    5089  ENDF/B-VI Release 8 Photoatomic Data for 20-CA                               mat2000      02/07/03
+                     Energy range:   1.00000E-03  to  1.00000E+05 MeV.
+ 
+  comment.   35000.04p pips data for photon energy broadening converted to CDF form.
+  35000.04p    6929  ENDF/B-VI Release 8 Photoatomic Data for 35-BR                               mat3500      02/07/03
+                     Energy range:   1.00000E-03  to  1.00000E+05 MeV.
+ 
+  comment.   57000.04p pips data for photon energy broadening converted to CDF form.
+  57000.04p    8820  ENDF/B-VI Release 8 Photoatomic Data for 57-LA                               mat5700      02/07/03
+                     Energy range:   1.00000E-03  to  1.00000E+05 MeV.
+
+  total     1104649
+
+ maximum photon energy set to    100.0 mev (maximum electron energy)
+
+                        tables from file el03                                                            
+
+   8000.03e    2333                                                                                          6/6/98    
+                     Energy range:   1.00000E-03  to  1.00000E+03 MeV.
+  13000.03e    2337                                                                                          6/6/98    
+                     Energy range:   1.00000E-03  to  1.00000E+03 MeV.
+  20000.03e    2343                                                                                          6/6/98    
+                     Energy range:   1.00000E-03  to  1.00000E+03 MeV.
+  35000.03e    2349                                                                                          6/6/98    
+                     Energy range:   1.00000E-03  to  1.00000E+03 MeV.
+  57000.03e    2363                                                                                          6/6/98    
+                     Energy range:   1.00000E-03  to  1.00000E+03 MeV.
+
+1particles and energy limits                                                                            print table 101
+
+                         particle      maximum       smallest      largest       always        always
+                         cutoff        particle      table         table         use table     use model
+   particle type         energy        energy        maximum       maximum       below         above
+
+    1  n    neutron     0.0000E+00    1.0000E+36    2.0000E+01    1.5000E+02    1.0000E+36    1.0000E+36
+    2  p    photon      1.0000E-03    1.0000E+02    1.0000E+05    1.0000E+05    1.0000E+36    1.0000E+36
+    3  e    electron    1.0000E-03    1.0000E+02    1.0000E+02    1.0000E+02    1.0000E+36    1.0000E+36
+ 
+ 
+  warning.  material        3 has been set to a conductor.
+  comment.  setting up hash-based fast table search for xsec tables
+
+ ------------------------------------------------------------------------------------------
+ =====> Set up arrays for hash-based fast table search for xsec data
+
+    number of hash bins   =     8192
+    max hash table energy =  1.00000E-11
+    min hash table energy =  1.50000E+02
+
+           nuclide      ne      emin        emax     ave_bins  min_bins  max_bins
+            8016.62c    2759 1.00000E-11 1.50000E+02       1.3       1.0      34.0
+           13027.60c    2241 1.00000E-11 2.00000E+01       1.3       1.0      38.0
+           20000.60c    2704 1.00000E-11 2.00000E+01       1.3       1.0      45.0
+           35079.71c   29373 1.00000E-11 2.00000E+01       4.6       1.0     150.0
+           35081.71c   28644 1.00000E-11 2.00000E+01       4.5       1.0     155.0
+           57138.71c    5610 1.00000E-11 2.00000E+01       1.7       1.0      50.0
+           57139.71c   21722 1.00000E-11 2.00000E+01       3.7       1.0     192.0
+
+ ------------------------------------------------------------------------------------------
+
+
+ ***********************************************************************************************************************
+
+ dump no.    1 on file runtpe     nps =           0     coll =              0     ctm =        0.00   nrn =             
+    0
+
+        10 warning messages so far.
+ master starting      23 MPI slave tasks with       1 threads each  09/17/26 14:18:57 
+ master set rendezvous nps =    50000000,  work chunks =    23    09/17/26 14:18:57 
+ master set rendezvous nps =   100000000,  work chunks =    23    09/17/26 14:19:21 
+ master set rendezvous nps =   150000000,  work chunks =    23    09/17/26 14:19:45 
+ master set rendezvous nps =   200000000,  work chunks =    23    09/17/26 14:20:09 
+ master set rendezvous nps =   250000000,  work chunks =    23    09/17/26 14:20:32 
+ master set rendezvous nps =   300000000,  work chunks =    23    09/17/26 14:20:57 
+ master set rendezvous nps =   350000000,  work chunks =    23    09/17/26 14:21:20 
+ master set rendezvous nps =   400000000,  work chunks =    23    09/17/26 14:21:44 
+ master set rendezvous nps =   450000000,  work chunks =    23    09/17/26 14:22:08 
+ master set rendezvous nps =   500000000,  work chunks =    23    09/17/26 14:22:32 
+1problem summary                                                                                                           
+
+      run terminated when   500000000  particle histories were done.
++                                                                                                    09/17/26 14:22:56 
+      CaO Phi10 mm disk source, MCNP6 WATTS template                                       probid =  09/17/26 14:18:56 
+
+ neutron creation    tracks      weight        energy            neutron loss        tracks      weight        energy
+                                 (per source particle)                                           (per source particle)
+
+ source           500000000    1.0000E+00    1.4100E+01          escape           476174550    9.5235E-01    1.2431E+01
+ nucl. interaction        0    0.            0.                  energy cutoff            0    0.            0.        
+ particle decay           0    0.            0.                  time cutoff              0    0.            0.        
+ weight window            0    0.            0.                  weight window            0    0.            0.        
+ cell importance          0    0.            0.                  cell importance          0    0.            0.        
+ weight cutoff            0    0.            0.                  weight cutoff            0    0.            0.        
+ e or t importance        0    0.            0.                  e or t importance        0    0.            0.        
+ dxtran                   0    0.            0.                  dxtran                   0    0.            0.        
+ forced collisions        0    0.            0.                  forced collisions        0    0.            0.        
+ exp. transform           0    0.            0.                  exp. transform           0    0.            0.        
+ upscattering             0    0.            1.5930E-16          downscattering           0    0.            9.9067E-01
+ photonuclear             0    0.            0.                  capture           24645141    4.9290E-02    6.5958E-01
+ (n,xn)             1639382    3.2788E-03    4.1475E-03          loss to (n,xn)      819691    1.6394E-03    2.3014E-02
+ prompt fission           0    0.            0.                  loss to fission          0    0.            0.        
+ delayed fission          0    0.            0.                  nucl. interaction        0    0.            0.        
+ prompt photofis          0    0.            0.                  particle decay           0    0.            0.        
+ tabular boundary         0    0.            0.                  tabular boundary         0    0.            0.        
+ tabular sampling         0    0.            0.                  elastic scatter          0    0.            0.        
+     total        501639382    1.0033E+00    1.4104E+01              total        501639382    1.0033E+00    1.4104E+01
+
+   number of neutrons banked                  819691        average time of (shakes)              cutoffs
+   neutron tracks per source particle     1.0033E+00          escape            2.3177E+00          tco   1.0000E+33
+   neutron collisions per source particle 3.2976E-01          capture           1.7872E-01          eco   0.0000E+00
+   total neutron collisions                164881220          capture or escape 2.2124E+00          wc1   0.0000E+00
+   net multiplication              1.0016E+00 0.0000          any termination   2.2088E+00          wc2   0.0000E+00
+
+ photon creation     tracks      weight        energy            photon loss         tracks      weight        energy
+                                 (per source particle)                                           (per source particle)
+
+ source                   0    0.            0.                  escape            75005317    1.5000E-01    4.2783E-01
+ nucl. interaction        0    0.            0.                  energy cutoff          432    8.5351E-07    5.4717E-06
+ particle decay           0    0.            0.                  time cutoff              0    0.            0.        
+ weight window            0    0.            0.                  weight window            0    0.            0.        
+ cell importance          0    0.            0.                  cell importance          0    0.            0.        
+ weight cutoff            0    0.            0.                  weight cutoff            0    0.            0.        
+ e or t importance        0    0.            0.                  e or t importance        0    0.            0.        
+ dxtran                   0    0.            0.                  dxtran                   0    0.            0.        
+ forced collisions        0    0.            0.                  forced collisions        0    0.            0.        
+ exp. transform           0    0.            0.                  exp. transform           0    0.            0.        
+ from neutrons     77296703    1.5456E-01    5.3039E-01          compton scatter          0    0.            8.4584E-02
+ bremsstrahlung    14379995    2.8759E-02    3.2392E-03          capture           21851460    4.3684E-02    1.8170E-03
+ p-annihilation     4691878    9.3836E-03    4.7951E-03          pair production    2345939    4.6918E-03    2.4244E-02
+ photonuclear             0    0.            0.                  photonuclear abs         0    0.            0.        
+ electron x-rays          0    0.            0.                  loss to photofis         0    0.            0.        
+ compton fluores          0    0.            0.                                                                        
+ muon capt fluores        0    0.            0.                                                                        
+ 1st fluorescence   2790836    5.5795E-03    5.2618E-05                                                                
+ 2nd fluorescence     43736    8.7466E-05    3.7662E-07                                                                
+ cerenkov                 0    0.            0.                                                                        
+ (gamma,xgamma)           0    0.            0.                                                                        
+ tabular sampling         0    0.            0.                                                                        
+ prompt photofis          0    0.            0.                                                                        
+     total         99203148    1.9837E-01    5.3848E-01              total         99203148    1.9837E-01    5.3848E-01
+
+   number of photons banked                 96411880        average time of (shakes)              cutoffs
+   photon tracks per source particle      1.9841E-01          escape            5.0744E-01          tco   1.0000E+33
+   photon collisions per source particle  1.4902E-01          capture           1.6869E-01          eco   1.0000E-03
+   total photon collisions                  74510768          capture or escape 4.3104E-01          wc1   0.0000E+00
+                                                              any termination   4.2516E-01          wc2   0.0000E+00
+
+ computer time so far in this run    95.23 minutes            maximum number ever in bank        18
+ computer time in mcrun              88.95 minutes            bank overflows to backup file       0
+ source particles per minute            5.6212E+06
+ random numbers generated               5865861709            most random numbers used was         662 in history   168751011
+
+ range of sampled source weights = 1.0000E+00 to 1.0000E+00
+
+ estimated system efficiency for MPI usage =  4%
+
+ number of histories processed by each MPI task
+           0    21739130    21739130    21739130    21739130    21739130    21739130    21739130    21739130    21739130
+    21739130    21739130    21739130    21739130    21739130    21739130    21739130    21739130    21739130    21739130
+    21739130    21739130    21739130    21739140
+1neutron  activity in each cell                                                                         print table 126
+
+                       tracks     population   collisions   collisions     number        flux        average      average
+              cell    entering                               * weight     weighted     weighted   track weight   track mfp
+                                                          (per history)    energy       energy     (relative)      (cm)
+
+        1        1     7754341      8245380      4205431    8.4109E-03   6.6592E+00   1.0838E+01   1.0000E+00   6.8319E+00
+        2        2    19102652     11364313      1596350    3.1927E-03   7.8375E+00   1.1482E+01   1.0000E+00   8.7546E+00
+        3        3   504576847    500031360            0    0.0000E+00   1.3790E+01   1.4003E+01   1.0000E+00   0.0000E+00
+        4        4   520606030    500092672            0    0.0000E+00   1.2655E+01   1.3615E+01   1.0000E+00   0.0000E+00
+        5        5   459335303    447539404    159079439    3.1816E-01   1.0513E+01   1.2682E+01   1.0000E+00   1.3413E+01
+        6        6   487540079    476365770            0    0.0000E+00   1.1278E+01   1.3025E+01   1.0000E+00   0.0000E+00
+
+           total    1998915252   1943638899    164881220    3.2976E-01
+1photon   activity in each cell                                                                         print table 126
+
+                       tracks     population   collisions   collisions     number        flux        average      average
+              cell    entering                               * weight     weighted     weighted   track weight   track mfp
+                                                          (per history)    energy       energy     (relative)      (cm)
+
+        1        1     1866125      3266521      4127818    8.2551E-03   2.3795E+00   2.3795E+00   9.9994E-01   3.7928E+00
+        2        2     3569290      3367018       556086    1.1121E-03   2.5832E+00   2.5832E+00   9.9994E-01   8.6054E+00
+        3        3     6805670      6718348            0    0.0000E+00   2.8110E+00   2.8110E+00   9.9991E-01   0.0000E+00
+        4        4    29957041     22062119            0    0.0000E+00   2.8176E+00   2.8176E+00   9.9991E-01   0.0000E+00
+        5        5    17350845     94166626     69826864    1.3962E-01   2.7961E+00   2.7961E+00   9.9991E-01   1.2487E+01
+        6        6    77386589     75538412            0    0.0000E+00   2.8488E+00   2.8488E+00   9.9991E-01   0.0000E+00
+
+           total     136935560    205119044     74510768    1.4899E-01
+1summary of photons produced in neutron collisions
+
+              cell      number of      weight per     energy per     avg photon      mev/gm per    weight/neut    energy/neut
+                        photons       source neut    source neut      energy       source neut     collision      collision
+
+        1        1             0       0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00
+        2        2       1000414       2.00082E-03    6.06546E-03    3.03149E+00    4.32176E-05    6.26687E-01    1.89979E+00
+        3        3             0       0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00
+        4        4             0       0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00
+        5        5      76295857       1.52563E-01    5.24327E-01    3.43679E+00    8.27869E-05    4.79518E-01    1.64800E+00
+        6        6             0       0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00
+        7        7             0       0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00    0.00000E+00
+             total      77296271       1.54564E-01    5.30392E-01    3.43154E+00
+
+
+
+  energy      number of        number       cum number      weight of       weight       cum weight
+ interval      photons        frequency    distribution      photons       frequency    distribution
+ 
+   20.000            83      1.07378E-06    1.07378E-06    1.66000E-07    1.07398E-06    1.07398E-06
+   15.000           164      2.12169E-06    3.19548E-06    3.28000E-07    2.12209E-06    3.19608E-06
+   10.000        407001      5.26544E-03    5.26863E-03    8.14002E-04    5.26642E-03    5.26962E-03
+    9.000        127801      1.65338E-03    6.92202E-03    2.55602E-04    1.65369E-03    6.92331E-03
+    8.000        559180      7.23420E-03    1.41562E-02    1.11836E-03    7.23555E-03    1.41589E-02
+    7.000       3132123      4.05208E-02    5.46770E-02    6.26425E-03    4.05283E-02    5.46872E-02
+    6.000       9813318      1.26956E-01    1.81633E-01    1.96266E-02    1.26980E-01    1.81667E-01
+    5.000       3417379      4.42112E-02    2.25845E-01    6.83475E-03    4.42194E-02    2.25887E-01
+    4.000       6533672      8.45272E-02    3.10372E-01    1.30673E-02    8.45424E-02    3.10429E-01
+    3.000      20054506      2.59448E-01    5.69820E-01    4.01084E-02    2.59493E-01    5.69922E-01
+    2.000      11854152      1.53359E-01    7.23179E-01    2.37053E-02    1.53368E-01    7.23290E-01
+    1.000       8942729      1.15694E-01    8.38873E-01    1.78821E-02    1.15694E-01    8.38983E-01
+    0.500       5350878      6.92252E-02    9.08098E-01    1.06954E-02    6.91970E-02    9.08180E-01
+    0.100       2266391      2.93207E-02    9.37419E-01    4.53269E-03    2.93255E-02    9.37506E-01
+    0.010       4706349      6.08868E-02    9.98306E-01    9.40022E-03    6.08174E-02    9.98323E-01
+    0.000        130545      1.68888E-03    9.99994E-01    2.58315E-04    1.67124E-03    9.99994E-01
+
+   total       77296703      1.00000E+00                   1.54565E-01    1.00000E+00
+
+1tally        8        nps =   500000000
+           tally type 8    pulse height distribution.                   units   number         
+           particle(s): photons  
+           this tally is modified by   ft  geb
+ 
+ cell  1                                                                                                                               
+      energy   
+    0.0000E+00   8.33320E-04 0.0015
+    1.0000E-02   6.93086E-04 0.0017
+    2.0000E-02   1.46670E-04 0.0037
+    3.0000E-02   1.49600E-05 0.0116
+    4.0000E-02   1.15340E-05 0.0132
+    5.0000E-02   1.19340E-05 0.0129
+    6.0000E-02   1.26880E-05 0.0126
+    7.0000E-02   1.30920E-05 0.0124
+    8.0000E-02   1.51500E-05 0.0115
+    9.0000E-02   1.71240E-05 0.0108
+    1.0000E-01   1.93180E-05 0.0102
+    1.1000E-01   2.05940E-05 0.0099
+    1.2000E-01   2.21540E-05 0.0095
+    1.3000E-01   2.21400E-05 0.0095
+    1.4000E-01   2.27600E-05 0.0094
+    1.5000E-01   2.23820E-05 0.0095
+    1.6000E-01   2.28120E-05 0.0094
+    1.7000E-01   2.29620E-05 0.0093
+    1.8000E-01   2.24960E-05 0.0094
+    1.9000E-01   2.08280E-05 0.0098
+    2.0000E-01   1.95680E-05 0.0101
+    2.1000E-01   1.85500E-05 0.0104
+    2.2000E-01   1.83440E-05 0.0104
+    2.3000E-01   1.81960E-05 0.0105
+    2.4000E-01   1.79560E-05 0.0106
+    2.5000E-01   1.71420E-05 0.0108
+    2.6000E-01   1.68260E-05 0.0109
+    2.7000E-01   1.71120E-05 0.0108
+    2.8000E-01   1.67340E-05 0.0109
+    2.9000E-01   1.71160E-05 0.0108
+    3.0000E-01   1.65920E-05 0.0110
+    3.1000E-01   1.57100E-05 0.0113
+    3.2000E-01   1.39960E-05 0.0120
+    3.3000E-01   1.22460E-05 0.0128
+    3.4000E-01   1.15740E-05 0.0131
+    3.5000E-01   1.08340E-05 0.0136
+    3.6000E-01   1.03060E-05 0.0139
+    3.7000E-01   9.66600E-06 0.0144
+    3.8000E-01   9.24600E-06 0.0147
+    3.9000E-01   9.05200E-06 0.0149
+    4.0000E-01   8.93000E-06 0.0150
+    4.1000E-01   8.51800E-06 0.0153
+    4.2000E-01   8.06000E-06 0.0158
+    4.3000E-01   8.16000E-06 0.0157
+    4.4000E-01   7.52400E-06 0.0163
+    4.5000E-01   7.43400E-06 0.0164
+    4.6000E-01   7.20800E-06 0.0167
+    4.7000E-01   7.44400E-06 0.0164
+    4.8000E-01   7.75600E-06 0.0161
+    4.9000E-01   9.43200E-06 0.0146
+    5.0000E-01   1.27100E-05 0.0125
+    5.1000E-01   1.61320E-05 0.0111
+    5.2000E-01   1.64860E-05 0.0110
+    5.3000E-01   1.29900E-05 0.0124
+    5.4000E-01   9.05200E-06 0.0149
+    5.5000E-01   6.79000E-06 0.0172
+    5.6000E-01   5.76600E-06 0.0186
+    5.7000E-01   5.38400E-06 0.0193
+    5.8000E-01   5.41000E-06 0.0192
+    5.9000E-01   5.17600E-06 0.0197
+    6.0000E-01   5.16400E-06 0.0197
+    6.1000E-01   5.00200E-06 0.0200
+    6.2000E-01   5.04800E-06 0.0199
+    6.3000E-01   4.89400E-06 0.0202
+    6.4000E-01   4.94800E-06 0.0201
+    6.5000E-01   4.65400E-06 0.0207
+    6.6000E-01   4.56400E-06 0.0209
+    6.7000E-01   4.52800E-06 0.0210
+    6.8000E-01   4.51200E-06 0.0211
+    6.9000E-01   4.20600E-06 0.0218
+    7.0000E-01   4.24800E-06 0.0217
+    7.1000E-01   4.25000E-06 0.0217
+    7.2000E-01   4.26000E-06 0.0217
+    7.3000E-01   4.76800E-06 0.0205
+    7.4000E-01   5.24800E-06 0.0195
+    7.5000E-01   6.39000E-06 0.0177
+    7.6000E-01   7.17200E-06 0.0167
+    7.7000E-01   7.56400E-06 0.0163
+    7.8000E-01   7.06000E-06 0.0168
+    7.9000E-01   5.86000E-06 0.0185
+    8.0000E-01   4.81000E-06 0.0204
+    8.1000E-01   4.21000E-06 0.0218
+    8.2000E-01   4.01000E-06 0.0223
+    8.3000E-01   4.08000E-06 0.0221
+    8.4000E-01   4.52000E-06 0.0210
+    8.5000E-01   4.81400E-06 0.0204
+    8.6000E-01   4.57400E-06 0.0209
+    8.7000E-01   4.27000E-06 0.0216
+    8.8000E-01   4.07000E-06 0.0222
+    8.9000E-01   4.01400E-06 0.0223
+    9.0000E-01   3.82400E-06 0.0229
+    9.1000E-01   3.68800E-06 0.0233
+    9.2000E-01   3.45200E-06 0.0241
+    9.3000E-01   3.29800E-06 0.0246
+    9.4000E-01   3.23000E-06 0.0249
+    9.5000E-01   3.31000E-06 0.0246
+    9.6000E-01   3.21600E-06 0.0249
+    9.7000E-01   3.33800E-06 0.0245
+    9.8000E-01   3.52200E-06 0.0238
+    9.9000E-01   3.95200E-06 0.0225
+    1.0000E+00   4.50800E-06 0.0211
+    1.0100E+00   5.19200E-06 0.0196
+    1.0200E+00   5.39200E-06 0.0193
+    1.0300E+00   4.78200E-06 0.0205
+    1.0400E+00   3.95800E-06 0.0225
+    1.0500E+00   3.07800E-06 0.0255
+    1.0600E+00   2.85400E-06 0.0265
+    1.0700E+00   2.84600E-06 0.0265
+    1.0800E+00   2.80000E-06 0.0267
+    1.0900E+00   2.80200E-06 0.0267
+    1.1000E+00   2.86400E-06 0.0264
+    1.1100E+00   2.91200E-06 0.0262
+    1.1200E+00   3.03800E-06 0.0257
+    1.1300E+00   3.10400E-06 0.0254
+    1.1400E+00   3.29800E-06 0.0246
+    1.1500E+00   3.46800E-06 0.0240
+    1.1600E+00   3.73600E-06 0.0231
+    1.1700E+00   3.57400E-06 0.0237
+    1.1800E+00   3.38600E-06 0.0243
+    1.1900E+00   3.23400E-06 0.0249
+    1.2000E+00   2.87200E-06 0.0264
+    1.2100E+00   2.81200E-06 0.0267
+    1.2200E+00   2.69000E-06 0.0273
+    1.2300E+00   2.68000E-06 0.0273
+    1.2400E+00   2.57400E-06 0.0279
+    1.2500E+00   2.78400E-06 0.0268
+    1.2600E+00   2.62600E-06 0.0276
+    1.2700E+00   2.60000E-06 0.0277
+    1.2800E+00   2.71600E-06 0.0271
+    1.2900E+00   2.82800E-06 0.0266
+    1.3000E+00   2.90800E-06 0.0262
+    1.3100E+00   2.85800E-06 0.0265
+    1.3200E+00   2.74600E-06 0.0270
+    1.3300E+00   2.88200E-06 0.0263
+    1.3400E+00   2.87000E-06 0.0264
+    1.3500E+00   3.03600E-06 0.0257
+    1.3600E+00   3.12600E-06 0.0253
+    1.3700E+00   3.13200E-06 0.0253
+    1.3800E+00   3.15600E-06 0.0252
+    1.3900E+00   3.10600E-06 0.0254
+    1.4000E+00   2.96800E-06 0.0260
+    1.4100E+00   2.92800E-06 0.0261
+    1.4200E+00   2.76200E-06 0.0269
+    1.4300E+00   2.74800E-06 0.0270
+    1.4400E+00   2.68000E-06 0.0273
+    1.4500E+00   2.61400E-06 0.0277
+    1.4600E+00   2.54200E-06 0.0280
+    1.4700E+00   2.47800E-06 0.0284
+    1.4800E+00   2.57800E-06 0.0279
+    1.4900E+00   2.56400E-06 0.0279
+    1.5000E+00   2.65400E-06 0.0275
+    1.5100E+00   2.49400E-06 0.0283
+    1.5200E+00   2.56000E-06 0.0280
+    1.5300E+00   2.48400E-06 0.0284
+    1.5400E+00   2.62400E-06 0.0276
+    1.5500E+00   2.68200E-06 0.0273
+    1.5600E+00   2.64400E-06 0.0275
+    1.5700E+00   2.72000E-06 0.0271
+    1.5800E+00   2.71400E-06 0.0271
+    1.5900E+00   2.94000E-06 0.0261
+    1.6000E+00   3.28400E-06 0.0247
+    1.6100E+00   3.59800E-06 0.0236
+    1.6200E+00   3.51200E-06 0.0239
+    1.6300E+00   3.36600E-06 0.0244
+    1.6400E+00   3.17400E-06 0.0251
+    1.6500E+00   2.80000E-06 0.0267
+    1.6600E+00   2.72200E-06 0.0271
+    1.6700E+00   2.59200E-06 0.0278
+    1.6800E+00   2.74600E-06 0.0270
+    1.6900E+00   2.83400E-06 0.0266
+    1.7000E+00   2.94000E-06 0.0261
+    1.7100E+00   2.96400E-06 0.0260
+    1.7200E+00   3.17400E-06 0.0251
+    1.7300E+00   2.93800E-06 0.0261
+    1.7400E+00   2.77200E-06 0.0269
+    1.7500E+00   2.53600E-06 0.0281
+    1.7600E+00   2.63600E-06 0.0275
+    1.7700E+00   2.65800E-06 0.0274
+    1.7800E+00   2.80200E-06 0.0267
+    1.7900E+00   3.08600E-06 0.0255
+    1.8000E+00   3.35000E-06 0.0244
+    1.8100E+00   3.42600E-06 0.0242
+    1.8200E+00   3.32800E-06 0.0245
+    1.8300E+00   3.09800E-06 0.0254
+    1.8400E+00   2.71000E-06 0.0272
+    1.8500E+00   2.38000E-06 0.0290
+    1.8600E+00   2.37400E-06 0.0290
+    1.8700E+00   2.38200E-06 0.0290
+    1.8800E+00   2.41200E-06 0.0288
+    1.8900E+00   2.44800E-06 0.0286
+    1.9000E+00   2.43200E-06 0.0287
+    1.9100E+00   2.47600E-06 0.0284
+    1.9200E+00   2.57400E-06 0.0279
+    1.9300E+00   2.41000E-06 0.0288
+    1.9400E+00   2.42200E-06 0.0287
+    1.9500E+00   2.52200E-06 0.0282
+    1.9600E+00   2.51000E-06 0.0282
+    1.9700E+00   2.36200E-06 0.0291
+    1.9800E+00   2.50600E-06 0.0283
+    1.9900E+00   2.52000E-06 0.0282
+    2.0000E+00   2.38400E-06 0.0290
+    2.0100E+00   2.26400E-06 0.0297
+    2.0200E+00   2.27800E-06 0.0296
+    2.0300E+00   2.23000E-06 0.0299
+    2.0400E+00   2.19000E-06 0.0302
+    2.0500E+00   2.26000E-06 0.0297
+    2.0600E+00   2.06800E-06 0.0311
+    2.0700E+00   2.12600E-06 0.0307
+    2.0800E+00   1.95600E-06 0.0320
+    2.0900E+00   1.98200E-06 0.0318
+    2.1000E+00   2.04200E-06 0.0313
+    2.1100E+00   2.04400E-06 0.0313
+    2.1200E+00   2.05600E-06 0.0312
+    2.1300E+00   2.02200E-06 0.0315
+    2.1400E+00   2.02800E-06 0.0314
+    2.1500E+00   1.96600E-06 0.0319
+    2.1600E+00   2.07400E-06 0.0311
+    2.1700E+00   2.32200E-06 0.0293
+    2.1800E+00   2.44200E-06 0.0286
+    2.1900E+00   2.84400E-06 0.0265
+    2.2000E+00   3.31800E-06 0.0246
+    2.2100E+00   3.69400E-06 0.0233
+    2.2200E+00   3.74800E-06 0.0231
+    2.2300E+00   3.50000E-06 0.0239
+    2.2400E+00   3.17400E-06 0.0251
+    2.2500E+00   2.83000E-06 0.0266
+    2.2600E+00   2.68800E-06 0.0273
+    2.2700E+00   2.42600E-06 0.0287
+    2.2800E+00   2.46400E-06 0.0285
+    2.2900E+00   2.46400E-06 0.0285
+    2.3000E+00   2.36000E-06 0.0291
+    2.3100E+00   2.46400E-06 0.0285
+    2.3200E+00   2.20000E-06 0.0302
+    2.3300E+00   2.10800E-06 0.0308
+    2.3400E+00   2.04800E-06 0.0312
+    2.3500E+00   1.94400E-06 0.0321
+    2.3600E+00   1.85200E-06 0.0329
+    2.3700E+00   2.05000E-06 0.0312
+    2.3800E+00   2.00000E-06 0.0316
+    2.3900E+00   1.94600E-06 0.0321
+    2.4000E+00   1.94000E-06 0.0321
+    2.4100E+00   1.99800E-06 0.0316
+    2.4200E+00   1.86400E-06 0.0328
+    2.4300E+00   1.84200E-06 0.0330
+    2.4400E+00   1.87800E-06 0.0326
+    2.4500E+00   1.94200E-06 0.0321
+    2.4600E+00   1.92000E-06 0.0323
+    2.4700E+00   2.03400E-06 0.0314
+    2.4800E+00   2.09600E-06 0.0309
+    2.4900E+00   2.12800E-06 0.0307
+    2.5000E+00   2.20600E-06 0.0301
+    2.5100E+00   2.18000E-06 0.0303
+    2.5200E+00   2.09400E-06 0.0309
+    2.5300E+00   1.91200E-06 0.0323
+    2.5400E+00   2.00200E-06 0.0316
+    2.5500E+00   1.91400E-06 0.0323
+    2.5600E+00   1.98600E-06 0.0317
+    2.5700E+00   1.81000E-06 0.0332
+    2.5800E+00   1.92200E-06 0.0323
+    2.5900E+00   1.84200E-06 0.0330
+    2.6000E+00   1.83200E-06 0.0330
+    2.6100E+00   1.93000E-06 0.0322
+    2.6200E+00   1.89200E-06 0.0325
+    2.6300E+00   1.91600E-06 0.0323
+    2.6400E+00   1.92800E-06 0.0322
+    2.6500E+00   1.97600E-06 0.0318
+    2.6600E+00   2.09600E-06 0.0309
+    2.6700E+00   2.21600E-06 0.0300
+    2.6800E+00   2.25800E-06 0.0298
+    2.6900E+00   2.17800E-06 0.0303
+    2.7000E+00   2.27000E-06 0.0297
+    2.7100E+00   2.43600E-06 0.0287
+    2.7200E+00   2.52200E-06 0.0282
+    2.7300E+00   2.77000E-06 0.0269
+    2.7400E+00   2.82400E-06 0.0266
+    2.7500E+00   2.64400E-06 0.0275
+    2.7600E+00   2.69400E-06 0.0272
+    2.7700E+00   2.24400E-06 0.0299
+    2.7800E+00   2.31000E-06 0.0294
+    2.7900E+00   2.07200E-06 0.0311
+    2.8000E+00   2.13200E-06 0.0306
+    2.8100E+00   2.38600E-06 0.0290
+    2.8200E+00   2.23800E-06 0.0299
+    2.8300E+00   2.46600E-06 0.0285
+    2.8400E+00   2.11600E-06 0.0307
+    2.8500E+00   2.07800E-06 0.0310
+    2.8600E+00   2.03000E-06 0.0314
+    2.8700E+00   1.98200E-06 0.0318
+    2.8800E+00   1.93000E-06 0.0322
+    2.8900E+00   1.95800E-06 0.0320
+    2.9000E+00   2.02400E-06 0.0314
+    2.9100E+00   2.03600E-06 0.0313
+    2.9200E+00   1.95600E-06 0.0320
+    2.9300E+00   1.94800E-06 0.0320
+    2.9400E+00   2.01400E-06 0.0315
+    2.9500E+00   1.94400E-06 0.0321
+    2.9600E+00   2.05800E-06 0.0312
+    2.9700E+00   1.97600E-06 0.0318
+    2.9800E+00   2.04400E-06 0.0313
+    2.9900E+00   2.24400E-06 0.0299
+    3.0000E+00   2.39000E-06 0.0289
+    3.0100E+00   2.26200E-06 0.0297
+    3.0200E+00   2.14800E-06 0.0305
+    3.0300E+00   2.26400E-06 0.0297
+    3.0400E+00   1.97200E-06 0.0318
+    3.0500E+00   1.79000E-06 0.0334
+    3.0600E+00   1.80800E-06 0.0333
+    3.0700E+00   1.83600E-06 0.0330
+    3.0800E+00   1.74200E-06 0.0339
+    3.0900E+00   1.85200E-06 0.0329
+    3.1000E+00   1.76800E-06 0.0336
+    3.1100E+00   1.70800E-06 0.0342
+    3.1200E+00   1.84600E-06 0.0329
+    3.1300E+00   1.93400E-06 0.0322
+    3.1400E+00   1.85000E-06 0.0329
+    3.1500E+00   1.98200E-06 0.0318
+    3.1600E+00   2.16800E-06 0.0304
+    3.1700E+00   2.21800E-06 0.0300
+    3.1800E+00   2.29800E-06 0.0295
+    3.1900E+00   2.48600E-06 0.0284
+    3.2000E+00   2.60800E-06 0.0277
+    3.2100E+00   2.41800E-06 0.0288
+    3.2200E+00   2.62000E-06 0.0276
+    3.2300E+00   2.56200E-06 0.0279
+    3.2400E+00   2.42400E-06 0.0287
+    3.2500E+00   2.38400E-06 0.0290
+    3.2600E+00   2.21200E-06 0.0301
+    3.2700E+00   2.06600E-06 0.0311
+    3.2800E+00   2.02400E-06 0.0314
+    3.2900E+00   1.85200E-06 0.0329
+    3.3000E+00   1.75800E-06 0.0337
+    3.3100E+00   1.83400E-06 0.0330
+    3.3200E+00   1.75400E-06 0.0338
+    3.3300E+00   1.93000E-06 0.0322
+    3.3400E+00   1.96400E-06 0.0319
+    3.3500E+00   1.97600E-06 0.0318
+    3.3600E+00   1.94000E-06 0.0321
+    3.3700E+00   1.86800E-06 0.0327
+    3.3800E+00   2.03600E-06 0.0313
+    3.3900E+00   2.13200E-06 0.0306
+    3.4000E+00   2.22000E-06 0.0300
+    3.4100E+00   2.04800E-06 0.0312
+    3.4200E+00   2.20400E-06 0.0301
+    3.4300E+00   2.14800E-06 0.0305
+    3.4400E+00   2.11800E-06 0.0307
+    3.4500E+00   2.12000E-06 0.0307
+    3.4600E+00   1.90200E-06 0.0324
+    3.4700E+00   1.83200E-06 0.0330
+    3.4800E+00   1.60600E-06 0.0353
+    3.4900E+00   1.71200E-06 0.0342
+    3.5000E+00   1.60200E-06 0.0353
+    3.5100E+00   1.62000E-06 0.0351
+    3.5200E+00   1.49000E-06 0.0366
+    3.5300E+00   1.45800E-06 0.0370
+    3.5400E+00   1.53000E-06 0.0362
+    3.5500E+00   1.45200E-06 0.0371
+    3.5600E+00   1.45600E-06 0.0371
+    3.5700E+00   1.52000E-06 0.0363
+    3.5800E+00   1.42600E-06 0.0375
+    3.5900E+00   1.40600E-06 0.0377
+    3.6000E+00   1.46600E-06 0.0369
+    3.6100E+00   1.49800E-06 0.0365
+    3.6200E+00   1.50200E-06 0.0365
+    3.6300E+00   1.46200E-06 0.0370
+    3.6400E+00   1.60600E-06 0.0353
+    3.6500E+00   1.68800E-06 0.0344
+    3.6600E+00   1.76600E-06 0.0337
+    3.6700E+00   1.80800E-06 0.0333
+    3.6800E+00   2.08400E-06 0.0310
+    3.6900E+00   2.07600E-06 0.0310
+    3.7000E+00   2.07800E-06 0.0310
+    3.7100E+00   2.09000E-06 0.0309
+    3.7200E+00   2.23400E-06 0.0299
+    3.7300E+00   2.29600E-06 0.0295
+    3.7400E+00   2.27200E-06 0.0297
+    3.7500E+00   2.31400E-06 0.0294
+    3.7600E+00   2.31600E-06 0.0294
+    3.7700E+00   2.01200E-06 0.0315
+    3.7800E+00   1.76800E-06 0.0336
+    3.7900E+00   1.54000E-06 0.0360
+    3.8000E+00   1.37000E-06 0.0382
+    3.8100E+00   1.25600E-06 0.0399
+    3.8200E+00   1.17800E-06 0.0412
+    3.8300E+00   1.22600E-06 0.0404
+    3.8400E+00   1.28000E-06 0.0395
+    3.8500E+00   1.34400E-06 0.0386
+    3.8600E+00   1.30400E-06 0.0392
+    3.8700E+00   1.32000E-06 0.0389
+    3.8800E+00   1.45000E-06 0.0371
+    3.8900E+00   1.33000E-06 0.0388
+    3.9000E+00   1.50200E-06 0.0365
+    3.9100E+00   1.64000E-06 0.0349
+    3.9200E+00   1.71200E-06 0.0342
+    3.9300E+00   1.65600E-06 0.0348
+    3.9400E+00   1.62000E-06 0.0351
+    3.9500E+00   1.43600E-06 0.0373
+    3.9600E+00   1.44800E-06 0.0372
+    3.9700E+00   1.17400E-06 0.0413
+    3.9800E+00   1.15600E-06 0.0416
+    3.9900E+00   9.90000E-07 0.0449
+    4.0000E+00   9.02000E-07 0.0471
+    4.0100E+00   8.28000E-07 0.0491
+    4.0200E+00   9.00000E-07 0.0471
+    4.0300E+00   8.44000E-07 0.0487
+    4.0400E+00   8.30000E-07 0.0491
+    4.0500E+00   8.64000E-07 0.0481
+    4.0600E+00   8.66000E-07 0.0481
+    4.0700E+00   8.44000E-07 0.0487
+    4.0800E+00   8.94000E-07 0.0473
+    4.0900E+00   8.46000E-07 0.0486
+    4.1000E+00   8.88000E-07 0.0475
+    4.1100E+00   8.12000E-07 0.0496
+    4.1200E+00   8.90000E-07 0.0474
+    4.1300E+00   9.34000E-07 0.0463
+    4.1400E+00   9.54000E-07 0.0458
+    4.1500E+00   9.38000E-07 0.0462
+    4.1600E+00   9.38000E-07 0.0462
+    4.1700E+00   8.60000E-07 0.0482
+    4.1800E+00   9.54000E-07 0.0458
+    4.1900E+00   8.36000E-07 0.0489
+    4.2000E+00   9.22000E-07 0.0466
+    4.2100E+00   7.34000E-07 0.0522
+    4.2200E+00   8.48000E-07 0.0486
+    4.2300E+00   8.36000E-07 0.0489
+    4.2400E+00   7.84000E-07 0.0505
+    4.2500E+00   7.84000E-07 0.0505
+    4.2600E+00   6.96000E-07 0.0536
+    4.2700E+00   8.68000E-07 0.0480
+    4.2800E+00   8.10000E-07 0.0497
+    4.2900E+00   6.86000E-07 0.0540
+    4.3000E+00   7.90000E-07 0.0503
+    4.3100E+00   8.26000E-07 0.0492
+    4.3200E+00   7.58000E-07 0.0514
+    4.3300E+00   7.56000E-07 0.0514
+    4.3400E+00   7.20000E-07 0.0527
+    4.3500E+00   7.68000E-07 0.0510
+    4.3600E+00   6.56000E-07 0.0552
+    4.3700E+00   7.18000E-07 0.0528
+    4.3800E+00   7.64000E-07 0.0512
+    4.3900E+00   8.10000E-07 0.0497
+    4.4000E+00   8.16000E-07 0.0495
+    4.4100E+00   9.06000E-07 0.0470
+    4.4200E+00   9.60000E-07 0.0456
+    4.4300E+00   9.28000E-07 0.0464
+    4.4400E+00   1.09800E-06 0.0427
+    4.4500E+00   9.66000E-07 0.0455
+    4.4600E+00   9.72000E-07 0.0454
+    4.4700E+00   7.88000E-07 0.0504
+    4.4800E+00   7.56000E-07 0.0514
+    4.4900E+00   7.12000E-07 0.0530
+    4.5000E+00   7.10000E-07 0.0531
+    4.5100E+00   7.30000E-07 0.0523
+    4.5200E+00   7.06000E-07 0.0532
+    4.5300E+00   7.58000E-07 0.0514
+    4.5400E+00   7.50000E-07 0.0516
+    4.5500E+00   7.04000E-07 0.0533
+    4.5600E+00   6.98000E-07 0.0535
+    4.5700E+00   7.30000E-07 0.0523
+    4.5800E+00   7.74000E-07 0.0508
+    4.5900E+00   6.90000E-07 0.0538
+    4.6000E+00   7.66000E-07 0.0511
+    4.6100E+00   8.10000E-07 0.0497
+    4.6200E+00   6.86000E-07 0.0540
+    4.6300E+00   7.28000E-07 0.0524
+    4.6400E+00   7.84000E-07 0.0505
+    4.6500E+00   7.54000E-07 0.0515
+    4.6600E+00   7.68000E-07 0.0510
+    4.6700E+00   7.84000E-07 0.0505
+    4.6800E+00   6.78000E-07 0.0543
+    4.6900E+00   7.82000E-07 0.0506
+    4.7000E+00   7.20000E-07 0.0527
+    4.7100E+00   7.20000E-07 0.0527
+    4.7200E+00   7.42000E-07 0.0519
+    4.7300E+00   7.24000E-07 0.0526
+    4.7400E+00   7.34000E-07 0.0522
+    4.7500E+00   7.90000E-07 0.0503
+    4.7600E+00   6.48000E-07 0.0556
+    4.7700E+00   7.50000E-07 0.0516
+    4.7800E+00   6.44000E-07 0.0557
+    4.7900E+00   6.06000E-07 0.0574
+    4.8000E+00   7.74000E-07 0.0508
+    4.8100E+00   7.26000E-07 0.0525
+    4.8200E+00   7.46000E-07 0.0518
+    4.8300E+00   6.54000E-07 0.0553
+    4.8400E+00   6.74000E-07 0.0545
+    4.8500E+00   7.40000E-07 0.0520
+    4.8600E+00   6.36000E-07 0.0561
+    4.8700E+00   6.40000E-07 0.0559
+    4.8800E+00   7.10000E-07 0.0531
+    4.8900E+00   6.54000E-07 0.0553
+    4.9000E+00   7.60000E-07 0.0513
+    4.9100E+00   6.94000E-07 0.0537
+    4.9200E+00   7.12000E-07 0.0530
+    4.9300E+00   7.68000E-07 0.0510
+    4.9400E+00   8.08000E-07 0.0498
+    4.9500E+00   6.98000E-07 0.0535
+    4.9600E+00   7.74000E-07 0.0508
+    4.9700E+00   8.08000E-07 0.0498
+    4.9800E+00   7.36000E-07 0.0521
+    4.9900E+00   7.84000E-07 0.0505
+    5.0000E+00   6.98000E-07 0.0535
+    5.0100E+00   6.88000E-07 0.0539
+    5.0200E+00   6.52000E-07 0.0554
+    5.0300E+00   6.72000E-07 0.0546
+    5.0400E+00   7.34000E-07 0.0522
+    5.0500E+00   7.04000E-07 0.0533
+    5.0600E+00   7.78000E-07 0.0507
+    5.0700E+00   8.52000E-07 0.0485
+    5.0800E+00   9.04000E-07 0.0470
+    5.0900E+00   1.10000E-06 0.0426
+    5.1000E+00   1.27000E-06 0.0397
+    5.1100E+00   1.30600E-06 0.0391
+    5.1200E+00   1.22600E-06 0.0404
+    5.1300E+00   1.26800E-06 0.0397
+    5.1400E+00   1.12000E-06 0.0423
+    5.1500E+00   1.08400E-06 0.0430
+    5.1600E+00   9.50000E-07 0.0459
+    5.1700E+00   9.84000E-07 0.0451
+    5.1800E+00   8.46000E-07 0.0486
+    5.1900E+00   8.54000E-07 0.0484
+    5.2000E+00   7.88000E-07 0.0504
+    5.2100E+00   8.48000E-07 0.0486
+    5.2200E+00   8.42000E-07 0.0487
+    5.2300E+00   7.94000E-07 0.0502
+    5.2400E+00   8.70000E-07 0.0479
+    5.2500E+00   8.48000E-07 0.0486
+    5.2600E+00   7.82000E-07 0.0506
+    5.2700E+00   7.96000E-07 0.0501
+    5.2800E+00   8.48000E-07 0.0486
+    5.2900E+00   7.90000E-07 0.0503
+    5.3000E+00   8.16000E-07 0.0495
+    5.3100E+00   8.26000E-07 0.0492
+    5.3200E+00   7.82000E-07 0.0506
+    5.3300E+00   8.02000E-07 0.0499
+    5.3400E+00   7.42000E-07 0.0519
+    5.3500E+00   7.78000E-07 0.0507
+    5.3600E+00   8.62000E-07 0.0482
+    5.3700E+00   7.96000E-07 0.0501
+    5.3800E+00   8.26000E-07 0.0492
+    5.3900E+00   8.16000E-07 0.0495
+    5.4000E+00   8.14000E-07 0.0496
+    5.4100E+00   8.30000E-07 0.0491
+    5.4200E+00   7.80000E-07 0.0506
+    5.4300E+00   7.74000E-07 0.0508
+    5.4400E+00   6.94000E-07 0.0537
+    5.4500E+00   7.34000E-07 0.0522
+    5.4600E+00   7.38000E-07 0.0521
+    5.4700E+00   7.58000E-07 0.0514
+    5.4800E+00   7.16000E-07 0.0529
+    5.4900E+00   6.80000E-07 0.0542
+    5.5000E+00   6.54000E-07 0.0553
+    5.5100E+00   6.06000E-07 0.0574
+    5.5200E+00   6.62000E-07 0.0550
+    5.5300E+00   6.68000E-07 0.0547
+    5.5400E+00   5.84000E-07 0.0585
+    5.5500E+00   6.62000E-07 0.0550
+    5.5600E+00   7.68000E-07 0.0510
+    5.5700E+00   8.52000E-07 0.0485
+    5.5800E+00   9.36000E-07 0.0462
+    5.5900E+00   1.21800E-06 0.0405
+    5.6000E+00   1.36400E-06 0.0383
+    5.6100E+00   1.49400E-06 0.0366
+    5.6200E+00   1.63200E-06 0.0350
+    5.6300E+00   1.58000E-06 0.0356
+    5.6400E+00   1.63800E-06 0.0349
+    5.6500E+00   1.47800E-06 0.0368
+    5.6600E+00   1.23200E-06 0.0403
+    5.6700E+00   1.09000E-06 0.0428
+    5.6800E+00   8.84000E-07 0.0476
+    5.6900E+00   8.64000E-07 0.0481
+    5.7000E+00   7.46000E-07 0.0518
+    5.7100E+00   7.68000E-07 0.0510
+    5.7200E+00   6.80000E-07 0.0542
+    5.7300E+00   6.96000E-07 0.0536
+    5.7400E+00   7.12000E-07 0.0530
+    5.7500E+00   6.48000E-07 0.0556
+    5.7600E+00   7.00000E-07 0.0535
+    5.7700E+00   7.58000E-07 0.0514
+    5.7800E+00   6.84000E-07 0.0541
+    5.7900E+00   6.98000E-07 0.0535
+    5.8000E+00   6.86000E-07 0.0540
+    5.8100E+00   6.88000E-07 0.0539
+    5.8200E+00   7.24000E-07 0.0526
+    5.8300E+00   6.54000E-07 0.0553
+    5.8400E+00   6.76000E-07 0.0544
+    5.8500E+00   7.16000E-07 0.0529
+    5.8600E+00   7.08000E-07 0.0531
+    5.8700E+00   8.04000E-07 0.0499
+    5.8800E+00   7.94000E-07 0.0502
+    5.8900E+00   8.10000E-07 0.0497
+    5.9000E+00   8.24000E-07 0.0493
+    5.9100E+00   8.32000E-07 0.0490
+    5.9200E+00   7.28000E-07 0.0524
+    5.9300E+00   7.32000E-07 0.0523
+    5.9400E+00   6.54000E-07 0.0553
+    5.9500E+00   6.30000E-07 0.0563
+    5.9600E+00   5.78000E-07 0.0588
+    5.9700E+00   6.02000E-07 0.0576
+    5.9800E+00   4.84000E-07 0.0643
+    5.9900E+00   5.46000E-07 0.0605
+    6.0000E+00   4.90000E-07 0.0639
+    6.0100E+00   4.70000E-07 0.0652
+    6.0200E+00   4.74000E-07 0.0650
+    6.0300E+00   4.32000E-07 0.0680
+    6.0400E+00   5.04000E-07 0.0630
+    6.0500E+00   5.40000E-07 0.0609
+    6.0600E+00   5.68000E-07 0.0593
+    6.0700E+00   6.84000E-07 0.0541
+    6.0800E+00   8.56000E-07 0.0483
+    6.0900E+00   9.42000E-07 0.0461
+    6.1000E+00   1.15600E-06 0.0416
+    6.1100E+00   1.16400E-06 0.0415
+    6.1200E+00   1.33600E-06 0.0387
+    6.1300E+00   1.44800E-06 0.0372
+    6.1400E+00   1.30600E-06 0.0391
+    6.1500E+00   1.26000E-06 0.0398
+    6.1600E+00   1.15000E-06 0.0417
+    6.1700E+00   9.82000E-07 0.0451
+    6.1800E+00   9.08000E-07 0.0469
+    6.1900E+00   7.40000E-07 0.0520
+    6.2000E+00   6.06000E-07 0.0574
+    6.2100E+00   5.66000E-07 0.0594
+    6.2200E+00   4.58000E-07 0.0661
+    6.2300E+00   4.30000E-07 0.0682
+    6.2400E+00   4.48000E-07 0.0668
+    6.2500E+00   4.42000E-07 0.0673
+    6.2600E+00   4.52000E-07 0.0665
+    6.2700E+00   3.98000E-07 0.0709
+    6.2800E+00   3.92000E-07 0.0714
+    6.2900E+00   4.14000E-07 0.0695
+    6.3000E+00   4.34000E-07 0.0679
+    6.3100E+00   4.16000E-07 0.0693
+    6.3200E+00   3.94000E-07 0.0712
+    6.3300E+00   4.46000E-07 0.0670
+    6.3400E+00   4.20000E-07 0.0690
+    6.3500E+00   4.30000E-07 0.0682
+    6.3600E+00   4.74000E-07 0.0650
+    6.3700E+00   4.94000E-07 0.0636
+    6.3800E+00   5.42000E-07 0.0607
+    6.3900E+00   5.90000E-07 0.0582
+    6.4000E+00   6.66000E-07 0.0548
+    6.4100E+00   7.26000E-07 0.0525
+    6.4200E+00   6.40000E-07 0.0559
+    6.4300E+00   6.58000E-07 0.0551
+    6.4400E+00   6.06000E-07 0.0574
+    6.4500E+00   5.26000E-07 0.0617
+    6.4600E+00   5.32000E-07 0.0613
+    6.4700E+00   5.00000E-07 0.0632
+    6.4800E+00   4.24000E-07 0.0687
+    6.4900E+00   3.92000E-07 0.0714
+    6.5000E+00   3.54000E-07 0.0752
+    6.5100E+00   3.82000E-07 0.0724
+    6.5200E+00   3.38000E-07 0.0769
+    6.5300E+00   4.18000E-07 0.0692
+    6.5400E+00   3.70000E-07 0.0735
+    6.5500E+00   3.86000E-07 0.0720
+    6.5600E+00   4.78000E-07 0.0647
+    6.5700E+00   5.14000E-07 0.0624
+    6.5800E+00   5.60000E-07 0.0598
+    6.5900E+00   5.68000E-07 0.0593
+    6.6000E+00   6.74000E-07 0.0545
+    6.6100E+00   7.10000E-07 0.0531
+    6.6200E+00   6.92000E-07 0.0538
+    6.6300E+00   6.40000E-07 0.0559
+    6.6400E+00   5.86000E-07 0.0584
+    6.6500E+00   5.34000E-07 0.0612
+    6.6600E+00   4.84000E-07 0.0643
+    6.6700E+00   4.52000E-07 0.0665
+    6.6800E+00   4.06000E-07 0.0702
+    6.6900E+00   3.76000E-07 0.0729
+    6.7000E+00   3.72000E-07 0.0733
+    6.7100E+00   3.32000E-07 0.0776
+    6.7200E+00   3.20000E-07 0.0791
+    6.7300E+00   3.58000E-07 0.0747
+    6.7400E+00   2.86000E-07 0.0836
+    6.7500E+00   2.84000E-07 0.0839
+    6.7600E+00   3.12000E-07 0.0801
+    6.7700E+00   2.38000E-07 0.0917
+    6.7800E+00   2.44000E-07 0.0905
+    6.7900E+00   2.70000E-07 0.0861
+    6.8000E+00   3.06000E-07 0.0808
+    6.8100E+00   2.68000E-07 0.0864
+    6.8200E+00   2.18000E-07 0.0958
+    6.8300E+00   3.02000E-07 0.0814
+    6.8400E+00   2.58000E-07 0.0880
+    6.8500E+00   3.16000E-07 0.0796
+    6.8600E+00   2.56000E-07 0.0884
+    6.8700E+00   3.06000E-07 0.0808
+    6.8800E+00   3.46000E-07 0.0760
+    6.8900E+00   3.78000E-07 0.0727
+    6.9000E+00   3.72000E-07 0.0733
+    6.9100E+00   4.10000E-07 0.0698
+    6.9200E+00   3.96000E-07 0.0711
+    6.9300E+00   3.96000E-07 0.0711
+    6.9400E+00   3.80000E-07 0.0725
+    6.9500E+00   3.06000E-07 0.0808
+    6.9600E+00   3.22000E-07 0.0788
+    6.9700E+00   2.44000E-07 0.0905
+    6.9800E+00   2.20000E-07 0.0953
+    6.9900E+00   2.36000E-07 0.0921
+    7.0000E+00   2.26000E-07 0.0941
+    7.0100E+00   1.22000E-07 0.1280
+    7.0200E+00   1.64000E-07 0.1104
+    7.0300E+00   1.72000E-07 0.1078
+    7.0400E+00   1.76000E-07 0.1066
+    7.0500E+00   1.62000E-07 0.1111
+    7.0600E+00   2.34000E-07 0.0925
+    7.0700E+00   1.84000E-07 0.1043
+    7.0800E+00   2.56000E-07 0.0884
+    7.0900E+00   2.88000E-07 0.0833
+    7.1000E+00   3.18000E-07 0.0793
+    7.1100E+00   4.02000E-07 0.0705
+    7.1200E+00   3.24000E-07 0.0786
+    7.1300E+00   3.72000E-07 0.0733
+    7.1400E+00   3.70000E-07 0.0735
+    7.1500E+00   2.98000E-07 0.0819
+    7.1600E+00   2.90000E-07 0.0830
+    7.1700E+00   2.46000E-07 0.0902
+    7.1800E+00   2.04000E-07 0.0990
+    7.1900E+00   1.56000E-07 0.1132
+    7.2000E+00   1.36000E-07 0.1213
+    7.2100E+00   1.54000E-07 0.1140
+    7.2200E+00   1.20000E-07 0.1291
+    7.2300E+00   1.44000E-07 0.1179
+    7.2400E+00   1.38000E-07 0.1204
+    7.2500E+00   1.24000E-07 0.1270
+    7.2600E+00   1.04000E-07 0.1387
+    7.2700E+00   1.32000E-07 0.1231
+    7.2800E+00   9.60000E-08 0.1443
+    7.2900E+00   1.22000E-07 0.1280
+    7.3000E+00   1.16000E-07 0.1313
+    7.3100E+00   1.18000E-07 0.1302
+    7.3200E+00   1.14000E-07 0.1325
+    7.3300E+00   1.22000E-07 0.1280
+    7.3400E+00   1.36000E-07 0.1213
+    7.3500E+00   1.36000E-07 0.1213
+    7.3600E+00   1.18000E-07 0.1302
+    7.3700E+00   1.16000E-07 0.1313
+    7.3800E+00   1.20000E-07 0.1291
+    7.3900E+00   1.12000E-07 0.1336
+    7.4000E+00   1.16000E-07 0.1313
+    7.4100E+00   1.04000E-07 0.1387
+    7.4200E+00   8.60000E-08 0.1525
+    7.4300E+00   1.28000E-07 0.1250
+    7.4400E+00   1.32000E-07 0.1231
+    7.4500E+00   7.60000E-08 0.1622
+    7.4600E+00   9.00000E-08 0.1491
+    7.4700E+00   8.60000E-08 0.1525
+    7.4800E+00   8.40000E-08 0.1543
+    7.4900E+00   1.10000E-07 0.1348
+    7.5000E+00   1.20000E-07 0.1291
+    7.5100E+00   8.60000E-08 0.1525
+    7.5200E+00   9.40000E-08 0.1459
+    7.5300E+00   8.80000E-08 0.1508
+    7.5400E+00   6.00000E-08 0.1826
+    7.5500E+00   1.12000E-07 0.1336
+    7.5600E+00   1.04000E-07 0.1387
+    7.5700E+00   9.60000E-08 0.1443
+    7.5800E+00   1.24000E-07 0.1270
+    7.5900E+00   9.20000E-08 0.1474
+    7.6000E+00   1.20000E-07 0.1291
+    7.6100E+00   1.14000E-07 0.1325
+    7.6200E+00   8.60000E-08 0.1525
+    7.6300E+00   8.00000E-08 0.1581
+    7.6400E+00   9.00000E-08 0.1491
+    7.6500E+00   1.10000E-07 0.1348
+    7.6600E+00   1.16000E-07 0.1313
+    7.6700E+00   9.60000E-08 0.1443
+    7.6800E+00   7.40000E-08 0.1644
+    7.6900E+00   1.02000E-07 0.1400
+    7.7000E+00   8.40000E-08 0.1543
+    7.7100E+00   6.20000E-08 0.1796
+    7.7200E+00   1.02000E-07 0.1400
+    7.7300E+00   9.00000E-08 0.1491
+    7.7400E+00   9.40000E-08 0.1459
+    7.7500E+00   1.06000E-07 0.1374
+    7.7600E+00   7.80000E-08 0.1601
+    7.7700E+00   6.40000E-08 0.1768
+    7.7800E+00   7.60000E-08 0.1622
+    7.7900E+00   8.80000E-08 0.1508
+    7.8000E+00   6.80000E-08 0.1715
+    7.8100E+00   7.60000E-08 0.1622
+    7.8200E+00   7.80000E-08 0.1601
+    7.8300E+00   9.20000E-08 0.1474
+    7.8400E+00   1.02000E-07 0.1400
+    7.8500E+00   1.16000E-07 0.1313
+    7.8600E+00   9.60000E-08 0.1443
+    7.8700E+00   8.40000E-08 0.1543
+    7.8800E+00   7.60000E-08 0.1622
+    7.8900E+00   7.00000E-08 0.1690
+    7.9000E+00   7.80000E-08 0.1601
+    7.9100E+00   6.60000E-08 0.1741
+    7.9200E+00   1.02000E-07 0.1400
+    7.9300E+00   6.80000E-08 0.1715
+    7.9400E+00   7.40000E-08 0.1644
+    7.9500E+00   7.00000E-08 0.1690
+    7.9600E+00   5.60000E-08 0.1890
+    7.9700E+00   6.20000E-08 0.1796
+    7.9800E+00   5.40000E-08 0.1925
+    7.9900E+00   4.60000E-08 0.2085
+    8.0000E+00   7.20000E-08 0.1667
+    8.0100E+00   6.20000E-08 0.1796
+    8.0200E+00   7.20000E-08 0.1667
+    8.0300E+00   6.40000E-08 0.1768
+    8.0400E+00   6.20000E-08 0.1796
+    8.0500E+00   5.80000E-08 0.1857
+    8.0600E+00   5.80000E-08 0.1857
+    8.0700E+00   6.20000E-08 0.1796
+    8.0800E+00   8.40000E-08 0.1543
+    8.0900E+00   7.80000E-08 0.1601
+    8.1000E+00   7.40000E-08 0.1644
+    8.1100E+00   7.60000E-08 0.1622
+    8.1200E+00   5.40000E-08 0.1925
+    8.1300E+00   6.60000E-08 0.1741
+    8.1400E+00   5.20000E-08 0.1961
+    8.1500E+00   6.20000E-08 0.1796
+    8.1600E+00   5.60000E-08 0.1890
+    8.1700E+00   5.80000E-08 0.1857
+    8.1800E+00   5.40000E-08 0.1925
+    8.1900E+00   4.60000E-08 0.2085
+    8.2000E+00   5.60000E-08 0.1890
+    8.2100E+00   5.80000E-08 0.1857
+    8.2200E+00   4.60000E-08 0.2085
+    8.2300E+00   3.60000E-08 0.2357
+    8.2400E+00   4.40000E-08 0.2132
+    8.2500E+00   3.80000E-08 0.2294
+    8.2600E+00   4.00000E-08 0.2236
+    8.2700E+00   5.00000E-08 0.2000
+    8.2800E+00   5.60000E-08 0.1890
+    8.2900E+00   5.60000E-08 0.1890
+    8.3000E+00   4.00000E-08 0.2236
+    8.3100E+00   5.40000E-08 0.1925
+    8.3200E+00   6.00000E-08 0.1826
+    8.3300E+00   6.40000E-08 0.1768
+    8.3400E+00   4.80000E-08 0.2041
+    8.3500E+00   6.40000E-08 0.1768
+    8.3600E+00   6.00000E-08 0.1826
+    8.3700E+00   5.60000E-08 0.1890
+    8.3800E+00   5.80000E-08 0.1857
+    8.3900E+00   5.80000E-08 0.1857
+    8.4000E+00   6.00000E-08 0.1826
+    8.4100E+00   5.20000E-08 0.1961
+    8.4200E+00   4.60000E-08 0.2085
+    8.4300E+00   5.60000E-08 0.1890
+    8.4400E+00   4.80000E-08 0.2041
+    8.4500E+00   5.40000E-08 0.1925
+    8.4600E+00   4.40000E-08 0.2132
+    8.4700E+00   3.00000E-08 0.2582
+    8.4800E+00   4.40000E-08 0.2132
+    8.4900E+00   3.00000E-08 0.2582
+    8.5000E+00   4.20000E-08 0.2182
+    8.5100E+00   3.20000E-08 0.2500
+    8.5200E+00   4.00000E-08 0.2236
+    8.5300E+00   4.20000E-08 0.2182
+    8.5400E+00   2.80000E-08 0.2673
+    8.5500E+00   2.00000E-08 0.3162
+    8.5600E+00   4.60000E-08 0.2085
+    8.5700E+00   3.40000E-08 0.2425
+    8.5800E+00   3.00000E-08 0.2582
+    8.5900E+00   3.40000E-08 0.2425
+    8.6000E+00   3.80000E-08 0.2294
+    8.6100E+00   4.00000E-08 0.2236
+    8.6200E+00   3.40000E-08 0.2425
+    8.6300E+00   4.20000E-08 0.2182
+    8.6400E+00   3.60000E-08 0.2357
+    8.6500E+00   4.00000E-08 0.2236
+    8.6600E+00   4.20000E-08 0.2182
+    8.6700E+00   3.40000E-08 0.2425
+    8.6800E+00   4.20000E-08 0.2182
+    8.6900E+00   2.40000E-08 0.2887
+    8.7000E+00   5.00000E-08 0.2000
+    8.7100E+00   5.40000E-08 0.1925
+    8.7200E+00   4.00000E-08 0.2236
+    8.7300E+00   4.20000E-08 0.2182
+    8.7400E+00   3.80000E-08 0.2294
+    8.7500E+00   3.00000E-08 0.2582
+    8.7600E+00   4.20000E-08 0.2182
+    8.7700E+00   2.80000E-08 0.2673
+    8.7800E+00   4.40000E-08 0.2132
+    8.7900E+00   3.20000E-08 0.2500
+    8.8000E+00   4.40000E-08 0.2132
+    8.8100E+00   3.00000E-08 0.2582
+    8.8200E+00   5.40000E-08 0.1925
+    8.8300E+00   4.80000E-08 0.2041
+    8.8400E+00   4.20000E-08 0.2182
+    8.8500E+00   4.80000E-08 0.2041
+    8.8600E+00   4.40000E-08 0.2132
+    8.8700E+00   5.20000E-08 0.1961
+    8.8800E+00   4.60000E-08 0.2085
+    8.8900E+00   5.00000E-08 0.2000
+    8.9000E+00   2.40000E-08 0.2887
+    8.9100E+00   3.80000E-08 0.2294
+    8.9200E+00   5.40000E-08 0.1925
+    8.9300E+00   4.00000E-08 0.2236
+    8.9400E+00   3.60000E-08 0.2357
+    8.9500E+00   4.20000E-08 0.2182
+    8.9600E+00   3.40000E-08 0.2425
+    8.9700E+00   3.80000E-08 0.2294
+    8.9800E+00   4.00000E-08 0.2236
+    8.9900E+00   2.80000E-08 0.2673
+    9.0000E+00   2.60000E-08 0.2774
+    9.0100E+00   2.00000E-08 0.3162
+    9.0200E+00   2.40000E-08 0.2887
+    9.0300E+00   2.60000E-08 0.2774
+    9.0400E+00   2.40000E-08 0.2887
+    9.0500E+00   2.80000E-08 0.2673
+    9.0600E+00   4.00000E-08 0.2236
+    9.0700E+00   4.00000E-08 0.2236
+    9.0800E+00   3.20000E-08 0.2500
+    9.0900E+00   2.60000E-08 0.2774
+    9.1000E+00   2.80000E-08 0.2673
+    9.1100E+00   2.40000E-08 0.2887
+    9.1200E+00   2.60000E-08 0.2774
+    9.1300E+00   3.20000E-08 0.2500
+    9.1400E+00   2.60000E-08 0.2774
+    9.1500E+00   2.80000E-08 0.2673
+    9.1600E+00   2.20000E-08 0.3015
+    9.1700E+00   1.80000E-08 0.3333
+    9.1800E+00   2.40000E-08 0.2887
+    9.1900E+00   1.60000E-08 0.3536
+    9.2000E+00   1.60000E-08 0.3536
+    9.2100E+00   2.60000E-08 0.2774
+    9.2200E+00   3.60000E-08 0.2357
+    9.2300E+00   3.80000E-08 0.2294
+    9.2400E+00   2.00000E-08 0.3162
+    9.2500E+00   3.80000E-08 0.2294
+    9.2600E+00   2.80000E-08 0.2673
+    9.2700E+00   3.00000E-08 0.2582
+    9.2800E+00   2.80000E-08 0.2673
+    9.2900E+00   3.00000E-08 0.2582
+    9.3000E+00   3.80000E-08 0.2294
+    9.3100E+00   1.80000E-08 0.3333
+    9.3200E+00   3.00000E-08 0.2582
+    9.3300E+00   2.60000E-08 0.2774
+    9.3400E+00   2.60000E-08 0.2774
+    9.3500E+00   2.60000E-08 0.2774
+    9.3600E+00   2.00000E-08 0.3162
+    9.3700E+00   3.20000E-08 0.2500
+    9.3800E+00   3.40000E-08 0.2425
+    9.3900E+00   3.80000E-08 0.2294
+    9.4000E+00   2.80000E-08 0.2673
+    9.4100E+00   3.40000E-08 0.2425
+    9.4200E+00   3.20000E-08 0.2500
+    9.4300E+00   3.60000E-08 0.2357
+    9.4400E+00   3.00000E-08 0.2582
+    9.4500E+00   3.40000E-08 0.2425
+    9.4600E+00   3.40000E-08 0.2425
+    9.4700E+00   2.00000E-08 0.3162
+    9.4800E+00   3.00000E-08 0.2582
+    9.4900E+00   2.60000E-08 0.2774
+    9.5000E+00   2.80000E-08 0.2673
+    9.5100E+00   3.00000E-08 0.2582
+    9.5200E+00   2.80000E-08 0.2673
+    9.5300E+00   2.80000E-08 0.2673
+    9.5400E+00   1.60000E-08 0.3536
+    9.5500E+00   2.60000E-08 0.2774
+    9.5600E+00   3.00000E-08 0.2582
+    9.5700E+00   3.20000E-08 0.2500
+    9.5800E+00   2.60000E-08 0.2774
+    9.5900E+00   3.80000E-08 0.2294
+    9.6000E+00   3.60000E-08 0.2357
+    9.6100E+00   3.40000E-08 0.2425
+    9.6200E+00   2.20000E-08 0.3015
+    9.6300E+00   1.60000E-08 0.3536
+    9.6400E+00   4.60000E-08 0.2085
+    9.6500E+00   1.60000E-08 0.3536
+    9.6600E+00   3.20000E-08 0.2500
+    9.6700E+00   2.60000E-08 0.2774
+    9.6800E+00   2.80000E-08 0.2673
+    9.6900E+00   3.20000E-08 0.2500
+    9.7000E+00   2.20000E-08 0.3015
+    9.7100E+00   1.80000E-08 0.3333
+    9.7200E+00   1.60000E-08 0.3536
+    9.7300E+00   2.80000E-08 0.2673
+    9.7400E+00   2.20000E-08 0.3015
+    9.7500E+00   2.80000E-08 0.2673
+    9.7600E+00   2.20000E-08 0.3015
+    9.7700E+00   2.40000E-08 0.2887
+    9.7800E+00   3.20000E-08 0.2500
+    9.7900E+00   1.80000E-08 0.3333
+    9.8000E+00   1.60000E-08 0.3536
+    9.8100E+00   1.60000E-08 0.3536
+    9.8200E+00   2.80000E-08 0.2673
+    9.8300E+00   2.40000E-08 0.2887
+    9.8400E+00   1.80000E-08 0.3333
+    9.8500E+00   1.20000E-08 0.4082
+    9.8600E+00   2.60000E-08 0.2774
+    9.8700E+00   3.00000E-08 0.2582
+    9.8800E+00   3.00000E-08 0.2582
+    9.8900E+00   1.80000E-08 0.3333
+    9.9000E+00   3.00000E-08 0.2582
+    9.9100E+00   2.40000E-08 0.2887
+    9.9200E+00   1.80000E-08 0.3333
+    9.9300E+00   6.00000E-09 0.5774
+    9.9400E+00   2.20000E-08 0.3015
+    9.9500E+00   2.20000E-08 0.3015
+    9.9600E+00   3.60000E-08 0.2357
+    9.9700E+00   3.80000E-08 0.2294
+    9.9800E+00   2.80000E-08 0.2673
+    9.9900E+00   3.60000E-08 0.2357
+    1.0000E+01   2.60000E-08 0.2774
+    1.0010E+01   2.20000E-08 0.3015
+    1.0020E+01   2.40000E-08 0.2887
+    1.0030E+01   2.00000E-08 0.3162
+    1.0040E+01   2.20000E-08 0.3015
+    1.0050E+01   2.80000E-08 0.2673
+    1.0060E+01   2.00000E-08 0.3162
+    1.0070E+01   1.80000E-08 0.3333
+    1.0080E+01   3.00000E-08 0.2582
+    1.0090E+01   1.80000E-08 0.3333
+    1.0100E+01   2.40000E-08 0.2887
+    1.0110E+01   1.80000E-08 0.3333
+    1.0120E+01   2.00000E-08 0.3162
+    1.0130E+01   3.40000E-08 0.2425
+    1.0140E+01   1.80000E-08 0.3333
+    1.0150E+01   1.60000E-08 0.3536
+    1.0160E+01   2.20000E-08 0.3015
+    1.0170E+01   2.00000E-08 0.3162
+    1.0180E+01   1.60000E-08 0.3536
+    1.0190E+01   2.80000E-08 0.2673
+    1.0200E+01   3.20000E-08 0.2500
+    1.0210E+01   2.00000E-08 0.3162
+    1.0220E+01   3.00000E-08 0.2582
+    1.0230E+01   2.80000E-08 0.2673
+    1.0240E+01   3.20000E-08 0.2500
+    1.0250E+01   2.80000E-08 0.2673
+    1.0260E+01   3.20000E-08 0.2500
+    1.0270E+01   1.80000E-08 0.3333
+    1.0280E+01   1.40000E-08 0.3780
+    1.0290E+01   1.60000E-08 0.3536
+    1.0300E+01   1.40000E-08 0.3780
+    1.0310E+01   1.80000E-08 0.3333
+    1.0320E+01   2.20000E-08 0.3015
+    1.0330E+01   2.00000E-08 0.3162
+    1.0340E+01   2.60000E-08 0.2774
+    1.0350E+01   1.60000E-08 0.3536
+    1.0360E+01   1.60000E-08 0.3536
+    1.0370E+01   2.20000E-08 0.3015
+    1.0380E+01   3.00000E-08 0.2582
+    1.0390E+01   2.20000E-08 0.3015
+    1.0400E+01   1.60000E-08 0.3536
+    1.0410E+01   2.40000E-08 0.2887
+    1.0420E+01   2.40000E-08 0.2887
+    1.0430E+01   1.20000E-08 0.4082
+    1.0440E+01   3.20000E-08 0.2500
+    1.0450E+01   1.40000E-08 0.3780
+    1.0460E+01   3.00000E-08 0.2582
+    1.0470E+01   2.20000E-08 0.3015
+    1.0480E+01   2.00000E-08 0.3162
+    1.0490E+01   2.20000E-08 0.3015
+    1.0500E+01   1.60000E-08 0.3536
+    1.0510E+01   2.40000E-08 0.2887
+    1.0520E+01   1.80000E-08 0.3333
+    1.0530E+01   2.40000E-08 0.2887
+    1.0540E+01   2.40000E-08 0.2887
+    1.0550E+01   1.80000E-08 0.3333
+    1.0560E+01   2.00000E-08 0.3162
+    1.0570E+01   1.20000E-08 0.4082
+    1.0580E+01   1.60000E-08 0.3536
+    1.0590E+01   1.20000E-08 0.4082
+    1.0600E+01   1.00000E-08 0.4472
+    1.0610E+01   1.60000E-08 0.3536
+    1.0620E+01   1.00000E-08 0.4472
+    1.0630E+01   1.40000E-08 0.3780
+    1.0640E+01   2.00000E-08 0.3162
+    1.0650E+01   2.20000E-08 0.3015
+    1.0660E+01   1.00000E-08 0.4472
+    1.0670E+01   1.60000E-08 0.3536
+    1.0680E+01   6.00000E-09 0.5774
+    1.0690E+01   1.20000E-08 0.4082
+    1.0700E+01   1.80000E-08 0.3333
+    1.0710E+01   1.20000E-08 0.4082
+    1.0720E+01   1.80000E-08 0.3333
+    1.0730E+01   1.00000E-08 0.4472
+    1.0740E+01   1.40000E-08 0.3780
+    1.0750E+01   2.20000E-08 0.3015
+    1.0760E+01   1.80000E-08 0.3333
+    1.0770E+01   8.00000E-09 0.5000
+    1.0780E+01   1.60000E-08 0.3536
+    1.0790E+01   2.40000E-08 0.2887
+    1.0800E+01   1.80000E-08 0.3333
+    1.0810E+01   2.00000E-08 0.3162
+    1.0820E+01   1.60000E-08 0.3536
+    1.0830E+01   3.00000E-08 0.2582
+    1.0840E+01   1.20000E-08 0.4082
+    1.0850E+01   1.80000E-08 0.3333
+    1.0860E+01   1.60000E-08 0.3536
+    1.0870E+01   1.20000E-08 0.4082
+    1.0880E+01   1.40000E-08 0.3780
+    1.0890E+01   1.40000E-08 0.3780
+    1.0900E+01   8.00000E-09 0.5000
+    1.0910E+01   1.40000E-08 0.3780
+    1.0920E+01   1.00000E-08 0.4472
+    1.0930E+01   1.60000E-08 0.3536
+    1.0940E+01   1.20000E-08 0.4082
+    1.0950E+01   1.40000E-08 0.3780
+    1.0960E+01   2.40000E-08 0.2887
+    1.0970E+01   1.00000E-08 0.4472
+    1.0980E+01   1.60000E-08 0.3536
+    1.0990E+01   1.20000E-08 0.4082
+    1.1000E+01   1.40000E-08 0.3780
+    1.1010E+01   2.20000E-08 0.3015
+    1.1020E+01   1.00000E-08 0.4472
+    1.1030E+01   6.00000E-09 0.5774
+    1.1040E+01   8.00000E-09 0.5000
+    1.1050E+01   2.00000E-08 0.3162
+    1.1060E+01   1.20000E-08 0.4082
+    1.1070E+01   2.00000E-08 0.3162
+    1.1080E+01   8.00000E-09 0.5000
+    1.1090E+01   4.00000E-09 0.7071
+    1.1100E+01   1.40000E-08 0.3780
+    1.1110E+01   2.20000E-08 0.3015
+    1.1120E+01   1.20000E-08 0.4082
+    1.1130E+01   1.20000E-08 0.4082
+    1.1140E+01   1.80000E-08 0.3333
+    1.1150E+01   8.00000E-09 0.5000
+    1.1160E+01   1.00000E-08 0.4472
+    1.1170E+01   1.00000E-08 0.4472
+    1.1180E+01   1.00000E-08 0.4472
+    1.1190E+01   2.00000E-09 1.0000
+    1.1200E+01   1.40000E-08 0.3780
+    1.1210E+01   2.00000E-08 0.3162
+    1.1220E+01   1.00000E-08 0.4472
+    1.1230E+01   8.00000E-09 0.5000
+    1.1240E+01   1.20000E-08 0.4082
+    1.1250E+01   1.00000E-08 0.4472
+    1.1260E+01   8.00000E-09 0.5000
+    1.1270E+01   1.60000E-08 0.3536
+    1.1280E+01   1.60000E-08 0.3536
+    1.1290E+01   1.60000E-08 0.3536
+    1.1300E+01   1.00000E-08 0.4472
+    1.1310E+01   4.00000E-09 0.7071
+    1.1320E+01   1.60000E-08 0.3536
+    1.1330E+01   1.20000E-08 0.4082
+    1.1340E+01   8.00000E-09 0.5000
+    1.1350E+01   8.00000E-09 0.5000
+    1.1360E+01   4.00000E-09 0.7071
+    1.1370E+01   1.80000E-08 0.3333
+    1.1380E+01   1.00000E-08 0.4472
+    1.1390E+01   8.00000E-09 0.5000
+    1.1400E+01   4.00000E-09 0.7071
+    1.1410E+01   1.00000E-08 0.4472
+    1.1420E+01   4.00000E-09 0.7071
+    1.1430E+01   1.40000E-08 0.3780
+    1.1440E+01   8.00000E-09 0.5000
+    1.1450E+01   8.00000E-09 0.5000
+    1.1460E+01   1.40000E-08 0.3780
+    1.1470E+01   6.00000E-09 0.5774
+    1.1480E+01   8.00000E-09 0.5000
+    1.1490E+01   6.00000E-09 0.5774
+    1.1500E+01   1.20000E-08 0.4082
+    1.1510E+01   6.00000E-09 0.5774
+    1.1520E+01   6.00000E-09 0.5774
+    1.1530E+01   1.00000E-08 0.4472
+    1.1540E+01   1.40000E-08 0.3780
+    1.1550E+01   1.00000E-08 0.4472
+    1.1560E+01   6.00000E-09 0.5774
+    1.1570E+01   0.00000E+00 0.0000
+    1.1580E+01   6.00000E-09 0.5774
+    1.1590E+01   8.00000E-09 0.5000
+    1.1600E+01   1.00000E-08 0.4472
+    1.1610E+01   4.00000E-09 0.7071
+    1.1620E+01   6.00000E-09 0.5774
+    1.1630E+01   6.00000E-09 0.5774
+    1.1640E+01   6.00000E-09 0.5774
+    1.1650E+01   8.00000E-09 0.5000
+    1.1660E+01   4.00000E-09 0.7071
+    1.1670E+01   1.20000E-08 0.4082
+    1.1680E+01   2.00000E-09 1.0000
+    1.1690E+01   4.00000E-09 0.7071
+    1.1700E+01   6.00000E-09 0.5774
+    1.1710E+01   1.20000E-08 0.4082
+    1.1720E+01   1.00000E-08 0.4472
+    1.1730E+01   8.00000E-09 0.5000
+    1.1740E+01   4.00000E-09 0.7071
+    1.1750E+01   2.00000E-09 1.0000
+    1.1760E+01   6.00000E-09 0.5774
+    1.1770E+01   0.00000E+00 0.0000
+    1.1780E+01   2.00000E-09 1.0000
+    1.1790E+01   8.00000E-09 0.5000
+    1.1800E+01   2.00000E-09 1.0000
+    1.1810E+01   2.00000E-09 1.0000
+    1.1820E+01   2.00000E-09 1.0000
+    1.1830E+01   2.00000E-09 1.0000
+    1.1840E+01   2.00000E-09 1.0000
+    1.1850E+01   0.00000E+00 0.0000
+    1.1860E+01   6.00000E-09 0.5774
+    1.1870E+01   2.00000E-09 1.0000
+    1.1880E+01   2.00000E-09 1.0000
+    1.1890E+01   4.00000E-09 0.7071
+    1.1900E+01   4.00000E-09 0.7071
+    1.1910E+01   2.00000E-09 1.0000
+    1.1920E+01   2.00000E-09 1.0000
+    1.1930E+01   4.00000E-09 0.7071
+    1.1940E+01   4.00000E-09 0.7071
+    1.1950E+01   0.00000E+00 0.0000
+    1.1960E+01   4.00000E-09 0.7071
+    1.1970E+01   6.00000E-09 0.5774
+    1.1980E+01   6.00000E-09 0.5774
+    1.1990E+01   4.00000E-09 0.7071
+    1.2000E+01   2.00000E-09 1.0000
+    1.2010E+01   2.00000E-09 1.0000
+    1.2020E+01   2.00000E-09 1.0000
+    1.2030E+01   0.00000E+00 0.0000
+    1.2040E+01   0.00000E+00 0.0000
+    1.2050E+01   4.00000E-09 0.7071
+    1.2060E+01   0.00000E+00 0.0000
+    1.2070E+01   2.00000E-09 1.0000
+    1.2080E+01   4.00000E-09 0.7071
+    1.2090E+01   0.00000E+00 0.0000
+    1.2100E+01   4.00000E-09 0.7071
+    1.2110E+01   4.00000E-09 0.7071
+    1.2120E+01   2.00000E-09 1.0000
+    1.2130E+01   0.00000E+00 0.0000
+    1.2140E+01   0.00000E+00 0.0000
+    1.2150E+01   4.00000E-09 0.7071
+    1.2160E+01   2.00000E-09 1.0000
+    1.2170E+01   0.00000E+00 0.0000
+    1.2180E+01   0.00000E+00 0.0000
+    1.2190E+01   0.00000E+00 0.0000
+    1.2200E+01   0.00000E+00 0.0000
+    1.2210E+01   2.00000E-09 1.0000
+    1.2220E+01   2.00000E-09 1.0000
+    1.2230E+01   2.00000E-09 1.0000
+    1.2240E+01   2.00000E-09 1.0000
+    1.2250E+01   2.00000E-09 1.0000
+    1.2260E+01   2.00000E-09 1.0000
+    1.2270E+01   2.00000E-09 1.0000
+    1.2280E+01   0.00000E+00 0.0000
+    1.2290E+01   2.00000E-09 1.0000
+    1.2300E+01   0.00000E+00 0.0000
+    1.2310E+01   4.00000E-09 0.7071
+    1.2320E+01   2.00000E-09 1.0000
+    1.2330E+01   0.00000E+00 0.0000
+    1.2340E+01   0.00000E+00 0.0000
+    1.2350E+01   0.00000E+00 0.0000
+    1.2360E+01   0.00000E+00 0.0000
+    1.2370E+01   2.00000E-09 1.0000
+    1.2380E+01   0.00000E+00 0.0000
+    1.2390E+01   0.00000E+00 0.0000
+    1.2400E+01   2.00000E-09 1.0000
+    1.2410E+01   2.00000E-09 1.0000
+    1.2420E+01   0.00000E+00 0.0000
+    1.2430E+01   0.00000E+00 0.0000
+    1.2440E+01   4.00000E-09 0.7071
+    1.2450E+01   0.00000E+00 0.0000
+    1.2460E+01   0.00000E+00 0.0000
+    1.2470E+01   0.00000E+00 0.0000
+    1.2480E+01   2.00000E-09 1.0000
+    1.2490E+01   0.00000E+00 0.0000
+    1.2500E+01   0.00000E+00 0.0000
+    1.2510E+01   0.00000E+00 0.0000
+    1.2520E+01   0.00000E+00 0.0000
+    1.2530E+01   2.00000E-09 1.0000
+    1.2540E+01   0.00000E+00 0.0000
+    1.2550E+01   0.00000E+00 0.0000
+    1.2560E+01   0.00000E+00 0.0000
+    1.2570E+01   0.00000E+00 0.0000
+    1.2580E+01   0.00000E+00 0.0000
+    1.2590E+01   2.00000E-09 1.0000
+    1.2600E+01   2.00000E-09 1.0000
+    1.2610E+01   0.00000E+00 0.0000
+    1.2620E+01   0.00000E+00 0.0000
+    1.2630E+01   0.00000E+00 0.0000
+    1.2640E+01   0.00000E+00 0.0000
+    1.2650E+01   2.00000E-09 1.0000
+    1.2660E+01   0.00000E+00 0.0000
+    1.2670E+01   0.00000E+00 0.0000
+    1.2680E+01   0.00000E+00 0.0000
+    1.2690E+01   0.00000E+00 0.0000
+    1.2700E+01   0.00000E+00 0.0000
+    1.2710E+01   0.00000E+00 0.0000
+    1.2720E+01   2.00000E-09 1.0000
+    1.2730E+01   0.00000E+00 0.0000
+    1.2740E+01   0.00000E+00 0.0000
+    1.2750E+01   0.00000E+00 0.0000
+    1.2760E+01   0.00000E+00 0.0000
+    1.2770E+01   0.00000E+00 0.0000
+    1.2780E+01   0.00000E+00 0.0000
+    1.2790E+01   0.00000E+00 0.0000
+    1.2800E+01   0.00000E+00 0.0000
+    1.2810E+01   0.00000E+00 0.0000
+    1.2820E+01   0.00000E+00 0.0000
+    1.2830E+01   0.00000E+00 0.0000
+    1.2840E+01   2.00000E-09 1.0000
+    1.2850E+01   0.00000E+00 0.0000
+    1.2860E+01   0.00000E+00 0.0000
+    1.2870E+01   0.00000E+00 0.0000
+    1.2880E+01   0.00000E+00 0.0000
+    1.2890E+01   0.00000E+00 0.0000
+    1.2900E+01   0.00000E+00 0.0000
+    1.2910E+01   2.00000E-09 1.0000
+    1.2920E+01   0.00000E+00 0.0000
+    1.2930E+01   0.00000E+00 0.0000
+    1.2940E+01   2.00000E-09 1.0000
+    1.2950E+01   0.00000E+00 0.0000
+    1.2960E+01   2.00000E-09 1.0000
+    1.2970E+01   0.00000E+00 0.0000
+    1.2980E+01   0.00000E+00 0.0000
+    1.2990E+01   0.00000E+00 0.0000
+    1.3000E+01   0.00000E+00 0.0000
+    1.3010E+01   0.00000E+00 0.0000
+    1.3020E+01   0.00000E+00 0.0000
+    1.3030E+01   0.00000E+00 0.0000
+    1.3040E+01   0.00000E+00 0.0000
+    1.3050E+01   0.00000E+00 0.0000
+    1.3060E+01   0.00000E+00 0.0000
+    1.3070E+01   0.00000E+00 0.0000
+    1.3080E+01   0.00000E+00 0.0000
+    1.3090E+01   0.00000E+00 0.0000
+    1.3100E+01   0.00000E+00 0.0000
+    1.3110E+01   0.00000E+00 0.0000
+    1.3120E+01   0.00000E+00 0.0000
+    1.3130E+01   0.00000E+00 0.0000
+    1.3140E+01   0.00000E+00 0.0000
+    1.3150E+01   0.00000E+00 0.0000
+    1.3160E+01   0.00000E+00 0.0000
+    1.3170E+01   0.00000E+00 0.0000
+    1.3180E+01   0.00000E+00 0.0000
+    1.3190E+01   0.00000E+00 0.0000
+    1.3200E+01   0.00000E+00 0.0000
+    1.3210E+01   0.00000E+00 0.0000
+    1.3220E+01   4.00000E-09 0.7071
+    1.3230E+01   0.00000E+00 0.0000
+    1.3240E+01   0.00000E+00 0.0000
+    1.3250E+01   0.00000E+00 0.0000
+    1.3260E+01   0.00000E+00 0.0000
+    1.3270E+01   0.00000E+00 0.0000
+    1.3280E+01   0.00000E+00 0.0000
+    1.3290E+01   0.00000E+00 0.0000
+    1.3300E+01   0.00000E+00 0.0000
+    1.3310E+01   0.00000E+00 0.0000
+    1.3320E+01   0.00000E+00 0.0000
+    1.3330E+01   0.00000E+00 0.0000
+    1.3340E+01   0.00000E+00 0.0000
+    1.3350E+01   0.00000E+00 0.0000
+    1.3360E+01   0.00000E+00 0.0000
+    1.3370E+01   0.00000E+00 0.0000
+    1.3380E+01   0.00000E+00 0.0000
+    1.3390E+01   0.00000E+00 0.0000
+    1.3400E+01   2.00000E-09 1.0000
+    1.3410E+01   0.00000E+00 0.0000
+    1.3420E+01   0.00000E+00 0.0000
+    1.3430E+01   0.00000E+00 0.0000
+    1.3440E+01   2.00000E-09 1.0000
+    1.3450E+01   0.00000E+00 0.0000
+    1.3460E+01   0.00000E+00 0.0000
+    1.3470E+01   0.00000E+00 0.0000
+    1.3480E+01   0.00000E+00 0.0000
+    1.3490E+01   0.00000E+00 0.0000
+    1.3500E+01   0.00000E+00 0.0000
+    1.3510E+01   0.00000E+00 0.0000
+    1.3520E+01   0.00000E+00 0.0000
+    1.3530E+01   0.00000E+00 0.0000
+    1.3540E+01   0.00000E+00 0.0000
+    1.3550E+01   0.00000E+00 0.0000
+    1.3560E+01   0.00000E+00 0.0000
+    1.3570E+01   0.00000E+00 0.0000
+    1.3580E+01   0.00000E+00 0.0000
+    1.3590E+01   0.00000E+00 0.0000
+    1.3600E+01   0.00000E+00 0.0000
+    1.3610E+01   0.00000E+00 0.0000
+    1.3620E+01   2.00000E-09 1.0000
+    1.3630E+01   0.00000E+00 0.0000
+    1.3640E+01   0.00000E+00 0.0000
+    1.3650E+01   0.00000E+00 0.0000
+    1.3660E+01   0.00000E+00 0.0000
+    1.3670E+01   0.00000E+00 0.0000
+    1.3680E+01   0.00000E+00 0.0000
+    1.3690E+01   0.00000E+00 0.0000
+    1.3700E+01   0.00000E+00 0.0000
+    1.3710E+01   0.00000E+00 0.0000
+    1.3720E+01   0.00000E+00 0.0000
+    1.3730E+01   0.00000E+00 0.0000
+    1.3740E+01   0.00000E+00 0.0000
+    1.3750E+01   0.00000E+00 0.0000
+    1.3760E+01   0.00000E+00 0.0000
+    1.3770E+01   0.00000E+00 0.0000
+    1.3780E+01   0.00000E+00 0.0000
+    1.3790E+01   0.00000E+00 0.0000
+    1.3800E+01   0.00000E+00 0.0000
+    1.3810E+01   0.00000E+00 0.0000
+    1.3820E+01   0.00000E+00 0.0000
+    1.3830E+01   0.00000E+00 0.0000
+    1.3840E+01   0.00000E+00 0.0000
+    1.3850E+01   0.00000E+00 0.0000
+    1.3860E+01   0.00000E+00 0.0000
+    1.3870E+01   2.00000E-09 1.0000
+    1.3880E+01   0.00000E+00 0.0000
+    1.3890E+01   0.00000E+00 0.0000
+    1.3900E+01   0.00000E+00 0.0000
+    1.3910E+01   0.00000E+00 0.0000
+    1.3920E+01   0.00000E+00 0.0000
+    1.3930E+01   0.00000E+00 0.0000
+    1.3940E+01   0.00000E+00 0.0000
+    1.3950E+01   0.00000E+00 0.0000
+    1.3960E+01   0.00000E+00 0.0000
+    1.3970E+01   0.00000E+00 0.0000
+    1.3980E+01   0.00000E+00 0.0000
+    1.3990E+01   0.00000E+00 0.0000
+    1.4000E+01   0.00000E+00 0.0000
+    1.4010E+01   0.00000E+00 0.0000
+    1.4020E+01   0.00000E+00 0.0000
+    1.4030E+01   0.00000E+00 0.0000
+    1.4040E+01   0.00000E+00 0.0000
+    1.4050E+01   0.00000E+00 0.0000
+    1.4060E+01   0.00000E+00 0.0000
+    1.4070E+01   0.00000E+00 0.0000
+    1.4080E+01   0.00000E+00 0.0000
+    1.4090E+01   2.00000E-09 1.0000
+    1.4100E+01   0.00000E+00 0.0000
+    1.4110E+01   0.00000E+00 0.0000
+    1.4120E+01   0.00000E+00 0.0000
+    1.4130E+01   0.00000E+00 0.0000
+    1.4140E+01   0.00000E+00 0.0000
+    1.4150E+01   0.00000E+00 0.0000
+    1.4160E+01   0.00000E+00 0.0000
+    1.4170E+01   0.00000E+00 0.0000
+    1.4180E+01   0.00000E+00 0.0000
+    1.4190E+01   0.00000E+00 0.0000
+    1.4200E+01   0.00000E+00 0.0000
+    1.4210E+01   0.00000E+00 0.0000
+    1.4220E+01   0.00000E+00 0.0000
+    1.4230E+01   0.00000E+00 0.0000
+    1.4240E+01   0.00000E+00 0.0000
+    1.4250E+01   0.00000E+00 0.0000
+    1.4260E+01   0.00000E+00 0.0000
+    1.4270E+01   2.00000E-09 1.0000
+    1.4280E+01   0.00000E+00 0.0000
+    1.4290E+01   2.00000E-09 1.0000
+    1.4300E+01   0.00000E+00 0.0000
+    1.4310E+01   0.00000E+00 0.0000
+    1.4320E+01   0.00000E+00 0.0000
+    1.4330E+01   0.00000E+00 0.0000
+    1.4340E+01   0.00000E+00 0.0000
+    1.4350E+01   0.00000E+00 0.0000
+    1.4360E+01   0.00000E+00 0.0000
+    1.4370E+01   0.00000E+00 0.0000
+    1.4380E+01   0.00000E+00 0.0000
+    1.4390E+01   0.00000E+00 0.0000
+    1.4400E+01   0.00000E+00 0.0000
+    1.4410E+01   0.00000E+00 0.0000
+    1.4420E+01   0.00000E+00 0.0000
+    1.4430E+01   0.00000E+00 0.0000
+    1.4440E+01   0.00000E+00 0.0000
+    1.4450E+01   0.00000E+00 0.0000
+    1.4460E+01   0.00000E+00 0.0000
+    1.4470E+01   0.00000E+00 0.0000
+    1.4480E+01   0.00000E+00 0.0000
+    1.4490E+01   0.00000E+00 0.0000
+    1.4500E+01   0.00000E+00 0.0000
+    1.4510E+01   0.00000E+00 0.0000
+    1.4520E+01   0.00000E+00 0.0000
+    1.4530E+01   0.00000E+00 0.0000
+    1.4540E+01   0.00000E+00 0.0000
+    1.4550E+01   0.00000E+00 0.0000
+    1.4560E+01   0.00000E+00 0.0000
+    1.4570E+01   0.00000E+00 0.0000
+    1.4580E+01   0.00000E+00 0.0000
+    1.4590E+01   0.00000E+00 0.0000
+    1.4600E+01   0.00000E+00 0.0000
+    1.4610E+01   0.00000E+00 0.0000
+    1.4620E+01   0.00000E+00 0.0000
+    1.4630E+01   0.00000E+00 0.0000
+    1.4640E+01   0.00000E+00 0.0000
+    1.4650E+01   0.00000E+00 0.0000
+    1.4660E+01   0.00000E+00 0.0000
+    1.4670E+01   2.00000E-09 1.0000
+    1.4680E+01   0.00000E+00 0.0000
+    1.4690E+01   0.00000E+00 0.0000
+    1.4700E+01   0.00000E+00 0.0000
+    1.4710E+01   0.00000E+00 0.0000
+    1.4720E+01   0.00000E+00 0.0000
+    1.4730E+01   0.00000E+00 0.0000
+    1.4740E+01   0.00000E+00 0.0000
+    1.4750E+01   0.00000E+00 0.0000
+    1.4760E+01   0.00000E+00 0.0000
+    1.4770E+01   0.00000E+00 0.0000
+    1.4780E+01   0.00000E+00 0.0000
+    1.4790E+01   0.00000E+00 0.0000
+    1.4800E+01   0.00000E+00 0.0000
+    1.4810E+01   0.00000E+00 0.0000
+    1.4820E+01   0.00000E+00 0.0000
+    1.4830E+01   0.00000E+00 0.0000
+    1.4840E+01   0.00000E+00 0.0000
+    1.4850E+01   0.00000E+00 0.0000
+    1.4860E+01   0.00000E+00 0.0000
+    1.4870E+01   0.00000E+00 0.0000
+    1.4880E+01   0.00000E+00 0.0000
+    1.4890E+01   2.00000E-09 1.0000
+    1.4900E+01   2.00000E-09 1.0000
+    1.4910E+01   0.00000E+00 0.0000
+    1.4920E+01   0.00000E+00 0.0000
+    1.4930E+01   0.00000E+00 0.0000
+    1.4940E+01   0.00000E+00 0.0000
+    1.4950E+01   0.00000E+00 0.0000
+    1.4960E+01   0.00000E+00 0.0000
+    1.4970E+01   0.00000E+00 0.0000
+    1.4980E+01   0.00000E+00 0.0000
+    1.4990E+01   0.00000E+00 0.0000
+    1.5000E+01   0.00000E+00 0.0000
+    1.5010E+01   0.00000E+00 0.0000
+    1.5020E+01   0.00000E+00 0.0000
+    1.5030E+01   0.00000E+00 0.0000
+    1.5040E+01   0.00000E+00 0.0000
+    1.5050E+01   0.00000E+00 0.0000
+    1.5060E+01   0.00000E+00 0.0000
+    1.5070E+01   0.00000E+00 0.0000
+    1.5080E+01   0.00000E+00 0.0000
+    1.5090E+01   0.00000E+00 0.0000
+    1.5100E+01   0.00000E+00 0.0000
+    1.5110E+01   0.00000E+00 0.0000
+    1.5120E+01   0.00000E+00 0.0000
+    1.5130E+01   2.00000E-09 1.0000
+    1.5140E+01   0.00000E+00 0.0000
+    1.5150E+01   0.00000E+00 0.0000
+    1.5160E+01   0.00000E+00 0.0000
+    1.5170E+01   0.00000E+00 0.0000
+    1.5180E+01   0.00000E+00 0.0000
+    1.5190E+01   0.00000E+00 0.0000
+    1.5200E+01   0.00000E+00 0.0000
+    1.5210E+01   2.00000E-09 1.0000
+    1.5220E+01   0.00000E+00 0.0000
+    1.5230E+01   2.00000E-09 1.0000
+    1.5240E+01   0.00000E+00 0.0000
+    1.5250E+01   0.00000E+00 0.0000
+    1.5260E+01   0.00000E+00 0.0000
+    1.5270E+01   0.00000E+00 0.0000
+    1.5280E+01   0.00000E+00 0.0000
+    1.5290E+01   0.00000E+00 0.0000
+    1.5300E+01   2.00000E-09 1.0000
+    1.5310E+01   0.00000E+00 0.0000
+    1.5320E+01   0.00000E+00 0.0000
+    1.5330E+01   0.00000E+00 0.0000
+    1.5340E+01   0.00000E+00 0.0000
+    1.5350E+01   0.00000E+00 0.0000
+    1.5360E+01   0.00000E+00 0.0000
+    1.5370E+01   0.00000E+00 0.0000
+    1.5380E+01   0.00000E+00 0.0000
+    1.5390E+01   0.00000E+00 0.0000
+    1.5400E+01   0.00000E+00 0.0000
+    1.5410E+01   0.00000E+00 0.0000
+    1.5420E+01   0.00000E+00 0.0000
+    1.5430E+01   4.00000E-09 0.7071
+    1.5440E+01   0.00000E+00 0.0000
+    1.5450E+01   0.00000E+00 0.0000
+    1.5460E+01   0.00000E+00 0.0000
+    1.5470E+01   0.00000E+00 0.0000
+    1.5480E+01   0.00000E+00 0.0000
+    1.5490E+01   0.00000E+00 0.0000
+    1.5500E+01   0.00000E+00 0.0000
+    1.5510E+01   0.00000E+00 0.0000
+    1.5520E+01   0.00000E+00 0.0000
+    1.5530E+01   0.00000E+00 0.0000
+    1.5540E+01   0.00000E+00 0.0000
+    1.5550E+01   2.00000E-09 1.0000
+    1.5560E+01   0.00000E+00 0.0000
+    1.5570E+01   0.00000E+00 0.0000
+    1.5580E+01   0.00000E+00 0.0000
+    1.5590E+01   2.00000E-09 1.0000
+    1.5600E+01   0.00000E+00 0.0000
+    1.5610E+01   0.00000E+00 0.0000
+    1.5620E+01   0.00000E+00 0.0000
+    1.5630E+01   0.00000E+00 0.0000
+    1.5640E+01   0.00000E+00 0.0000
+    1.5650E+01   0.00000E+00 0.0000
+    1.5660E+01   0.00000E+00 0.0000
+    1.5670E+01   0.00000E+00 0.0000
+    1.5680E+01   0.00000E+00 0.0000
+    1.5690E+01   0.00000E+00 0.0000
+    1.5700E+01   0.00000E+00 0.0000
+    1.5710E+01   0.00000E+00 0.0000
+    1.5720E+01   0.00000E+00 0.0000
+    1.5730E+01   0.00000E+00 0.0000
+    1.5740E+01   0.00000E+00 0.0000
+    1.5750E+01   0.00000E+00 0.0000
+    1.5760E+01   0.00000E+00 0.0000
+    1.5770E+01   0.00000E+00 0.0000
+    1.5780E+01   0.00000E+00 0.0000
+    1.5790E+01   0.00000E+00 0.0000
+    1.5800E+01   0.00000E+00 0.0000
+    1.5810E+01   0.00000E+00 0.0000
+    1.5820E+01   0.00000E+00 0.0000
+    1.5830E+01   0.00000E+00 0.0000
+    1.5840E+01   0.00000E+00 0.0000
+    1.5850E+01   2.00000E-09 1.0000
+    1.5860E+01   0.00000E+00 0.0000
+    1.5870E+01   0.00000E+00 0.0000
+    1.5880E+01   0.00000E+00 0.0000
+    1.5890E+01   0.00000E+00 0.0000
+    1.5900E+01   0.00000E+00 0.0000
+    1.5910E+01   0.00000E+00 0.0000
+    1.5920E+01   0.00000E+00 0.0000
+    1.5930E+01   0.00000E+00 0.0000
+    1.5940E+01   0.00000E+00 0.0000
+    1.5950E+01   0.00000E+00 0.0000
+    1.5960E+01   0.00000E+00 0.0000
+    1.5970E+01   0.00000E+00 0.0000
+    1.5980E+01   0.00000E+00 0.0000
+    1.5990E+01   0.00000E+00 0.0000
+    1.6000E+01   0.00000E+00 0.0000
+      total      3.57767E-03 0.0007
+
+
+ ===================================================================================================================================
+
+           results of 10 statistical checks for the estimated answer for the tally fluctuation chart (tfc) bin of tally        8
+
+ tfc bin     --mean--      ---------relative error---------      ----variance of the variance----      --figure of merit--     -pdf-
+ behavior    behavior      value   decrease   decrease rate      value   decrease   decrease rate       value     behavior     slope
+
+ desired      random       <0.10      yes      1/sqrt(nps)       <0.10      yes        1/nps           constant    random      >3.00
+ observed     random        0.00      yes          yes            0.00      yes         yes            constant    random      10.00
+ passed?        yes          yes      yes          yes             yes      yes         yes               yes        yes         yes
+
+ ===================================================================================================================================
+
+
+ this tally meets the statistical criteria used to form confidence intervals: check the tally fluctuation chart to verify.
+ the results in other bins associated with this tally may not meet these statistical criteria.
+
+ ----- estimated confidence intervals:  -----
+
+ estimated asymmetric confidence interval(1,2,3 sigma): 3.5750E-03 to 3.5803E-03; 3.5723E-03 to 3.5830E-03; 3.5697E-03 to 3.5857E-03
+ estimated  symmetric confidence interval(1,2,3 sigma): 3.5750E-03 to 3.5803E-03; 3.5723E-03 to 3.5830E-03; 3.5697E-03 to 3.5857E-03
+
+1analysis of the results in the tally fluctuation chart bin (tfc) for tally        8 with nps =   500000000  print table 160
+
+
+ normed average tally per history  = 3.57767E-03          unnormed average tally per history  = 3.57767E-03
+ estimated tally relative error    = 0.0007               estimated variance of the variance  = 0.0000
+ relative error from zero tallies  = 0.0007               relative error from nonzero scores  = 0.0000
+
+ number of nonzero history tallies =     1788836          efficiency for the nonzero tallies  = 0.0036
+ history number of largest  tally  =          36          largest  unnormalized history tally = 1.00000E+00
+ (largest  tally)/(average tally)  = 2.79511E+02          (largest  tally)/(avg nonzero tally)= 1.00000E+00
+
+ (confidence interval shift)/mean  = 0.0000               shifted confidence interval center  = 3.57767E-03
+
+
+ if the largest  history score sampled so far were to occur on the next history, the tfc bin quantities would change as follows:
+
+      estimated quantities           value at nps           value at nps+1           value(nps+1)/value(nps)-1.
+
+      mean                            3.57767E-03             3.57767E-03                     0.000001
+      relative error                  7.46340E-04             7.46339E-04                     0.000000
+      variance of the variance        5.53030E-07             5.53030E-07                    -0.000001
+      shifted center                  3.57767E-03             3.57767E-03                     0.000000
+      figure of merit                 2.01829E+04             2.01829E+04                     0.000001
+
+ the 100 largest  history tallies appear to have a  maximum value of about 1.00000E+00
+ the large score tail of the empirical history score probability density function appears to have no unsampled regions.
+
+ fom = (histories/minute)*(f(x) signal-to-noise ratio)**2 = (5.621E+06)*( 5.992E-02)**2 = (5.621E+06)*(3.591E-03) = 2.018E+04
+
+1    some tally scores were not made for various reasons:
+
+                                  beyond last bin     not in
+                   tally       user  segment   mult   angle   energy   time             
+                      8          0       0       0       0      19       0
+
+1status of the statistical checks used to form confidence intervals for the mean for each tally bin
+
+
+ tally   result of statistical checks for the tfc bin (the first check not passed is listed) and error magnitude check for all bins
+
+        8   passed the 10 statistical checks for the tally fluctuation chart bin result               
+         missed all bin error check:  1602 tally bins had   351 bins with zeros and   537 bins with relative errors exceeding 0.10
+
+
+ the 10 statistical checks are only for the tally fluctuation chart bin and do not apply to other tally bins.
+
+ the tally bins with zeros may or may not be correct: compare the source, cutoffs, multipliers, et cetera with the tally bins.
+
+ warning.       1 of the     1 tallies had bins with relative errors greater than recommended.
+1tally fluctuation charts                              
+
+                            tally        8
+          nps      mean     error   vov  slope    fom
+     50000000   3.5744E-03 0.0024 0.0000 10.0   20205
+    100000000   3.5794E-03 0.0017 0.0000 10.0   20216
+    150000000   3.5805E-03 0.0014 0.0000 10.0   20214
+    200000000   3.5812E-03 0.0012 0.0000 10.0   20213
+    250000000   3.5806E-03 0.0011 0.0000 10.0   20207
+    300000000   3.5789E-03 0.0010 0.0000 10.0   20195
+    350000000   3.5798E-03 0.0009 0.0000 10.0   20198
+    400000000   3.5788E-03 0.0008 0.0000 10.0   20191
+    450000000   3.5778E-03 0.0008 0.0000 10.0   20184
+    500000000   3.5777E-03 0.0007 0.0000 10.0   20183
+
+ ***********************************************************************************************************************
+
+ dump no.    2 on file runtpe     nps =   500000000     coll =      239391988     ctm =       88.95   nrn =       
+ 5865861709
+
+        11 warning messages so far.
+
+
+ run terminated when   500000000  particle histories were done.
+
+ computer time =   95.23 minutes
+
+ mcnp     version 6.mpi 04/12/25                     09/17/26 14:22:56                     probid =  09/17/26 14:18:56 

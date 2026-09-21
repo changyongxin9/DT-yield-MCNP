@@ -1,0 +1,9 @@
+{
+  "status": "pending",
+  "target_energy_MeV": 6.13,
+  "ROI_low_MeV": null,
+  "ROI_high_MeV": null,
+  "reference_case": null,
+  "method": "Gaussian + linear background; one fixed ROI for all models",
+  "note": "No formal fixed ROI has been selected yet. Null values are intentional and are not simulation results."
+}

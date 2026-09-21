@@ -22,21 +22,16 @@ xsdir
 MCNP---DATE/
 Installation/
 
-# Raw or bulk outputs are excluded by default. Curated samples live in reference/.
+# Raw or bulk outputs are excluded by default.
 results/raw/
 **/output/
 *.out
 *.outp
 outp
-!reference/**/outp
+!*_public.outp
 
 # Formal outputs remain local because unmodified MCNP files include the
 # supercomputer XSDIR/account path. Their hashes and locations are inventoried.
-
-# Generated analysis artifacts
-*_roi_scan.csv
-*_roi_fit.png
-*_roi_summary.txt
 
 # Credentials and local environment files
 .env

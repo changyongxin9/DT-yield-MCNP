@@ -1,0 +1,10 @@
+Case: Point
+NPS: 500000000
+Target Energy: 6.13 MeV
+F8 @ 6.13 MeV: 1.53000000E-06
+RE @ 6.13 MeV: 0.0362
+ROI Range: 6.09-6.17 MeV
+ROI Sum: 1.12600000E-05
+ROI Max Energy: 6.13 MeV
+ROI Max F8: 1.53000000E-06
+ROI Max RE: 0.0362

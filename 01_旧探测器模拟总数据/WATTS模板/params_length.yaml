@@ -1,0 +1,103 @@
+template: template.i
+parameter_csv: ../长度优化/parameter.csv
+parameter_schema: dimensional
+
+cases:
+  - case: T04_H20_D01
+    category: 长度优化
+    group: T04
+    Rin: 5
+    Rout: 9
+    H: 20
+    d: 1
+  - case: T04_H25_D01
+    category: 长度优化
+    group: T04
+    Rin: 5
+    Rout: 9
+    H: 25
+    d: 1
+  - case: T04_H30_D01
+    category: 长度优化
+    group: T04
+    Rin: 5
+    Rout: 9
+    H: 30
+    d: 1
+  - case: T04_H35_D01
+    category: 长度优化
+    group: T04
+    Rin: 5
+    Rout: 9
+    H: 35
+    d: 1
+  - case: T04_H40_D01
+    category: 长度优化
+    group: T04
+    Rin: 5
+    Rout: 9
+    H: 40
+    d: 1
+  - case: T04_H45_D01
+    category: 长度优化
+    group: T04
+    Rin: 5
+    Rout: 9
+    H: 45
+    d: 1
+  - case: T04_H50_D01
+    category: 长度优化
+    group: T04
+    Rin: 5
+    Rout: 9
+    H: 50
+    d: 1
+  - case: T05_H20_D01
+    category: 长度优化
+    group: T05
+    Rin: 5
+    Rout: 10
+    H: 20
+    d: 1
+  - case: T05_H25_D01
+    category: 长度优化
+    group: T05
+    Rin: 5
+    Rout: 10
+    H: 25
+    d: 1
+  - case: T05_H30_D01
+    category: 长度优化
+    group: T05
+    Rin: 5
+    Rout: 10
+    H: 30
+    d: 1
+  - case: T05_H35_D01
+    category: 长度优化
+    group: T05
+    Rin: 5
+    Rout: 10
+    H: 35
+    d: 1
+  - case: T05_H40_D01
+    category: 长度优化
+    group: T05
+    Rin: 5
+    Rout: 10
+    H: 40
+    d: 1
+  - case: T05_H45_D01
+    category: 长度优化
+    group: T05
+    Rin: 5
+    Rout: 10
+    H: 45
+    d: 1
+  - case: T05_H50_D01
+    category: 长度优化
+    group: T05
+    Rin: 5
+    Rout: 10
+    H: 50
+    d: 1

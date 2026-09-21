@@ -1,0 +1,61 @@
+template: template.i
+parameter_csv: ../距离优化/parameter.csv
+parameter_schema: dimensional
+
+cases:
+  - case: T04_H25_D01
+    category: 距离优化
+    group: T04_H25
+    Rin: 5
+    Rout: 9
+    H: 25
+    d: 1
+  - case: T04_H25_D02
+    category: 距离优化
+    group: T04_H25
+    Rin: 5
+    Rout: 9
+    H: 25
+    d: 2
+  - case: T04_H25_D03
+    category: 距离优化
+    group: T04_H25
+    Rin: 5
+    Rout: 9
+    H: 25
+    d: 3
+  - case: T04_H25_D04
+    category: 距离优化
+    group: T04_H25
+    Rin: 5
+    Rout: 9
+    H: 25
+    d: 4
+  - case: T05_H25_D01
+    category: 距离优化
+    group: T05_H25
+    Rin: 5
+    Rout: 10
+    H: 25
+    d: 1
+  - case: T05_H25_D02
+    category: 距离优化
+    group: T05_H25
+    Rin: 5
+    Rout: 10
+    H: 25
+    d: 2
+  - case: T05_H25_D03
+    category: 距离优化
+    group: T05_H25
+    Rin: 5
+    Rout: 10
+    H: 25
+    d: 3
+  - case: T05_H25_D04
+    category: 距离优化
+    group: T05_H25
+    Rin: 5
+    Rout: 10
+    H: 25
+    d: 4
